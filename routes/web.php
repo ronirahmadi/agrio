@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\SuperAdmin\MainController;
 use App\Http\Controllers\SuperAdmin\PetaniController;
 use App\Http\Controllers\SuperAdmin\TanamanController;
@@ -34,6 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// BERANDA
+Route::get('/beranda', [BerandaController::class, 'beranda'])->name('beranda');
+
 
 // SUPERADMIN
 Route::get('/superadmin/main', [MainController::class, 'main'])->name('superadmin.main');

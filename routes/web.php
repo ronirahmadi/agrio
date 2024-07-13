@@ -35,8 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-// SUPERADMIN
-Route::get('/superadmin/main', [MainController::class, 'main'])->name('superadmin.main');
+Route::group(['middleware'=>'role:superadmin'],function () {
+    // SUPERADMIN
+    Route::get('/superadmin/main', [MainController::class, 'main'])->name('superadmin.main');
+});
 
 // PETANI
 Route::get('/superadmin/petani', [PetaniController::class, 'main'])->name('superadmin.petani');

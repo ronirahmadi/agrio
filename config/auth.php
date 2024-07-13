@@ -14,8 +14,8 @@ return [
     */
 
     'defaults' => [
-        'guard' => 'web',
-        'passwords' => 'users',
+        'guard' => 'superadmin',
+        'passwords' => 'superadmin',
     ],
 
     /*
@@ -36,9 +36,13 @@ return [
     */
 
     'guards' => [
-        'web' => [
+        'superadmin' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'superadmin',
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admin',
         ],
     ],
 
@@ -60,7 +64,7 @@ return [
     */
 
     'providers' => [
-        'users' => [
+        'superadmin' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
         ],

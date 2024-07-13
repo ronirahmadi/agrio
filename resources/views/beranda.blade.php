@@ -2,10 +2,9 @@
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gardnma || Responsive HTML 5 Template</title>
+    <title>Agrio Pestisida Organik - NSI</title>
     <!-- Favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -58,26 +57,32 @@
                 <div class="animation-preloader">
                     <div class="spinner"></div>
                     <div class="txt-loading">
+                        <span data-text-preloader="A" class="letters-loading">
+                            A
+                        </span>
                         <span data-text-preloader="g" class="letters-loading">
                             g
-                        </span>
-                        <span data-text-preloader="a" class="letters-loading">
-                            a
                         </span>
                         <span data-text-preloader="r" class="letters-loading">
                             r
                         </span>
-                        <span data-text-preloader="d" class="letters-loading">
-                            d
+                        <span data-text-preloader="i" class="letters-loading">
+                            i
                         </span>
-                        <span data-text-preloader="n" class="letters-loading">
-                            n
+                        <span data-text-preloader="o" class="letters-loading">
+                            o
                         </span>
-                        <span data-text-preloader="m" class="letters-loading">
-                            m
+                        <span data-text-preloader="-" class="letters-loading">
+                            -
                         </span>
-                        <span data-text-preloader="a" class="letters-loading">
-                            a
+                        <span data-text-preloader="N" class="letters-loading">
+                            N
+                        </span>
+                        <span data-text-preloader="S" class="letters-loading">
+                            S
+                        </span>
+                        <span data-text-preloader="I" class="letters-loading">
+                            I
                         </span>
                     </div>
                 </div>
@@ -91,56 +96,7 @@
         <!--Start Main Header One-->
         <header class="main-header main-header-one">
             <!--Start Main Header One Top-->
-            <div class="main-header-one__top">
-                <div class="auto-container">
-                    <div class="main-header-one__top-inner">
-
-                        <div class="main-header-one__top-left">
-                            <ul class="main-header__contact-info">
-                                <li>
-                                    <div class="inner">
-                                        <div class="icon-box">
-                                            <span class="icon-time"></span>
-                                        </div>
-                                        <div class="text-box">
-                                            <p>Mon to Sat: 09:00 am to 05:00 pm</p>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="inner">
-                                        <div class="icon-box">
-                                            <span class="icon-email"></span>
-                                        </div>
-                                        <div class="text-box">
-                                            <p><a href="mailto:yourmail@email.com">needhelp@company.com</a></p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-
-
-                        <div class="main-header-one__top-right">
-                            <div class="main-header-one__top-menu">
-                                <ul class="main-header-one__top-menu-list">
-                                    <li><a href="#">Our Faqs </a></li>
-                                    <li><a href="#">Pricing </a></li>
-                                    <li><a href="#">Contact </a></li>
-                                </ul>
-                            </div>
-
-                            <ul class="main-header-one__top-social-links">
-                                <li><a href="#"><span class="icon-facebook"></span></a></li>
-                                <li><a href="#"><span class="icon-twitter"></span></a></li>
-                                <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                                <li><a href="#"><span class="icon-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
             <!--End Main Header One Top-->
 
             <!--Start Main Header One Bottom-->
@@ -153,7 +109,7 @@
                                     <div class="main-header-one__bottom-left">
                                         <div class="logo-box-one">
                                             <a href="index.html">
-                                                <img src="assets/images/resources/logo-1.png" alt="Awesome Logo"
+                                                <img src="{{ asset('assets/img/agrio.png') }}" alt="Awesome Logo"
                                                     title="">
                                             </a>
                                         </div>
@@ -168,44 +124,10 @@
                                             <ul class="main-menu__list">
                                                 <li class="dropdown current">
                                                     <a href="index.html">Home <span class="line"></span></a>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="index.html">Home One</a>
-                                                        </li>
-                                                        <li><a href="index-2.html">Home Two</a></li>
-                                                        <li><a href="index-3.html">Home Three</a></li>
-                                                        <li class="dropdown">
-                                                            <a href="#">Header Styles</a>
-                                                            <ul>
-                                                                <li><a href="index.html">Header One</a></li>
-                                                                <li><a href="index-2.html">Header Two</a></li>
-                                                                <li><a href="index-3.html">Header Three</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
                                                 </li>
 
                                                 <li>
                                                     <a href="about.html">About <span class="line"></span></a>
-                                                </li>
-
-                                                <li class="dropdown">
-                                                    <a href="#">Services <span class="line"></span></a>
-                                                    <ul>
-                                                        <li><a href="services.html">Services</a></li>
-                                                        <li><a href="arbor-management.html">Arbor Management</a>
-                                                        </li>
-                                                        <li><a href="garden-management.html">Garden Management</a>
-                                                        </li>
-                                                        <li><a href="nursery.html">Nursery & Tree Farm</a>
-                                                        </li>
-                                                        <li><a href="trimming.html">Trimming & Pruning</a>
-                                                        </li>
-                                                        <li><a href="weeds-control.html">Pests & Weeds Control</a>
-                                                        </li>
-                                                        <li><a href="flowers-garden.html">Fruits & Flowers Garden</a>
-                                                        </li>
-                                                    </ul>
                                                 </li>
 
                                                 <li class="dropdown">
@@ -220,40 +142,21 @@
                                                     </ul>
                                                 </li>
 
-                                                <li class="dropdown">
-                                                    <a href="#">Blog <span class="line"></span></a>
-                                                    <ul>
-                                                        <li><a href="blog.html">Blog</a></li>
-                                                        <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                        <li><a href="blog-details.html">Blog Details</a></li>
-                                                    </ul>
-                                                </li>
                                                 <li>
                                                     <a href="contact.html">Contact <span class="line"></span></a>
+                                                </li>
+                                                <li>
+                                                    <div class="main-header-one__bottom-right">
+                                                        <div class="header-search-box">
+                                                            <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
+                                                        </div>
+                                                    </div>                                               
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
 
-                                    <div class="main-header-one__bottom-right">
-                                        <div class="header-search-box">
-                                            <a href="#" class="main-menu__search search-toggler icon-magnifying-glass">
-                                            </a>
-                                        </div>
-                                        <div class="main-header-one__bottom-right-btn">
-                                            <a href="contact.html">Get A Quote</a>
-                                        </div>
-
-                                        <div class="contact-box">
-                                            <div class="icon">
-                                                <span class="icon-chatting"></span>
-                                            </div>
-                                            <div class="text">
-                                                <p>Call Anytime</p>
-                                                <a href="tel:926668880000">92 666 888 0000</a>
-                                            </div>
-                                        </div>
-                                    </div>
+  
 
                                 </div>
                             </div>
@@ -297,36 +200,12 @@
                                 alt="#"></div>
                         <div class="shape2"><img src="assets/images/shapes/slider-v1-shape2.png" alt="#"></div>
 
-                        <div class="main-slider-two__outer-content">
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="#">Facebook</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Instagram</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Twitter</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Pinterest</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="date-box">
-                                <p>mon - fri <span> 9am - 7pm</span></p>
-                            </div>
-                        </div>
+                        
 
                         <div class="container">
                             <div class="main-slider-one__content">
                                 <div class="title">
-                                    <h2>Qulity Sod <br> & Landscape <br> Solutions</h2>
+                                    <h2>Organik Pesticide<br> & Bio Booster</h2>
                                 </div>
                                 <div class="btn-box">
                                     <a class="thm-btn" href="contact.html">
@@ -347,36 +226,10 @@
                                 alt="#"></div>
                         <div class="shape2"><img src="assets/images/shapes/slider-v1-shape2.png" alt="#"></div>
 
-                        <div class="main-slider-two__outer-content">
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="#">Facebook</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Instagram</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Twitter</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Pinterest</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="date-box">
-                                <p>mon - fri <span> 9am - 7pm</span></p>
-                            </div>
-                        </div>
-
                         <div class="container">
                             <div class="main-slider-one__content">
                                 <div class="title">
-                                    <h2>Qulity Sod <br> & Landscape <br> Solutions</h2>
+                                    <h2>Semi Quantum  <br> Physics</h2>
                                 </div>
                                 <div class="btn-box">
                                     <a class="thm-btn" href="contact.html">
@@ -397,36 +250,11 @@
                                 alt="#"></div>
                         <div class="shape2"><img src="assets/images/shapes/slider-v1-shape2.png" alt="#"></div>
 
-                        <div class="main-slider-two__outer-content">
-                            <div class="social-links">
-                                <ul>
-                                    <li>
-                                        <a href="#">Facebook</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Instagram</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Twitter</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#">Pinterest</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="date-box">
-                                <p>mon - fri <span> 9am - 7pm</span></p>
-                            </div>
-                        </div>
 
                         <div class="container">
                             <div class="main-slider-one__content">
                                 <div class="title">
-                                    <h2>Qulity Sod <br> & Landscape <br> Solutions</h2>
+                                    <h2>Higher Suface <br> Area</h2>
                                 </div>
                                 <div class="btn-box">
                                     <a class="thm-btn" href="contact.html">
@@ -455,244 +283,13 @@
         </section>
         <!--End Main Slider-->
 
-
-        <!--Start Why Choose One -->
-        <section class="why-choose-one">
-            <div class="shape1"></div>
-            <div class="shape2"><img src="assets/images/shapes/why-choose-v1-shape1.png" alt="#"></div>
-            <div class="shape3"><img src="assets/images/shapes/why-choose-v1-shape2.png" alt="#"></div>
-            <div class="why-choose-one__bg"
-                style="background-image: url(assets/images/pattern/why-choose-v1-pattern.png);"></div>
-            <div class="container">
-                <div class="sec-title text-center">
-                    <div class="sec-title__tagline">
-                        <span class="left"></span>
-                        <h6>People love</h6>
-                        <span class="right"></span>
-                    </div>
-                    <h2 class="sec-title__title">Why Choose Us Our Garden</h2>
-                </div>
-
-                <div class="row">
-                    <div class="col-xl-12">
-                        <div class="why-choose-one__inner">
-                            <div class="why-choose-one__tab-box tabs-box">
-
-                                <div class="row filter-layout masonary-layout">
-                                    <!--Start Why Choose One Tab Button-->
-                                    <div class="col-xl-4">
-                                        <ul class="tab-buttons clearfix list-unstyled">
-                                            <li data-tab="#services" class="tab-btn wow fadeInLeft"
-                                                data-wow-delay="100ms" data-wow-duration="1000ms">Guarantee Services
-                                            </li>
-                                            <li data-tab="#environmental" class="tab-btn active-btn wow fadeInLeft"
-                                                data-wow-delay="200ms" data-wow-duration="1000ms">Environmental
-                                                Friendly</li>
-                                            <li data-tab="#support" class="tab-btn wow fadeInLeft"
-                                                data-wow-delay="300ms" data-wow-duration="1000ms">Expert Support Team
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <!--Start Why Choose One Tab Button-->
-
-
-                                    <!--Start Why Choose One Tab Content-->
-                                    <div class="col-xl-8">
-                                        <div class="tabs-content">
-
-                                            <!--Start Tab-->
-                                            <div class="tab" id="services">
-                                                <div class="tabs-content__inner">
-                                                    <div class="tabs-content__inner-bg"
-                                                        style="background-image: url(assets/images/resources/why-choose-v1-img1.jpg);">
-                                                    </div>
-                                                    <div class="tabs-content__list clearfix">
-                                                        <ul class="clearfix">
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-gardening"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Gardening <br>
-                                                                            Design</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-farmer"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Available <br>
-                                                                            24/7</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-shovels"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experience <br>
-                                                                            of 20 year</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-pruning-shears"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experts <br>
-                                                                            Worker</a></h4>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--End Tab-->
-
-                                            <!--Start Tab-->
-                                            <div class="tab active-tab" id="environmental">
-                                                <div class="tabs-content__inner">
-                                                    <div class="tabs-content__inner-bg"
-                                                        style="background-image: url(assets/images/resources/why-choose-v1-img1.jpg);">
-                                                    </div>
-                                                    <div class="tabs-content__list clearfix">
-                                                        <ul class="clearfix">
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-gardening"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Gardening <br>
-                                                                            Design</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-farmer"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Available <br>
-                                                                            24/7</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-shovels"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experience <br>
-                                                                            of 20 year</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-pruning-shears"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experts <br>
-                                                                            Worker</a></h4>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--End Tab-->
-
-                                            <!--Start Tab-->
-                                            <div class="tab" id="support">
-                                                <div class="tabs-content__inner">
-                                                    <div class="tabs-content__inner-bg"
-                                                        style="background-image: url(assets/images/resources/why-choose-v1-img1.jpg);">
-                                                    </div>
-                                                    <div class="tabs-content__list clearfix">
-                                                        <ul class="clearfix">
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-gardening"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Gardening <br>
-                                                                            Design</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-farmer"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Available <br>
-                                                                            24/7</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li>
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-shovels"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experience <br>
-                                                                            of 20 year</a></h4>
-                                                                </div>
-                                                            </li>
-
-                                                            <li class="mt30">
-                                                                <div class="inner text-center">
-                                                                    <div class="icon-box">
-                                                                        <span class="icon-pruning-shears"></span>
-                                                                    </div>
-                                                                    <h4><a href="arbor-management.html">Experts <br>
-                                                                            Worker</a></h4>
-                                                                </div>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--End Tab-->
-
-                                        </div>
-                                    </div>
-                                    <!--End Why Choose One Tab Content-->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Why Choose One -->
-
         <!--Start About One -->
         <section class="about-one">
             <div class="shape1 float-bob-y"><img src="assets/images/shapes/about-v1-shape1.png" alt="#"></div>
             <div class="shape2 float-bob-y"><img src="assets/images/shapes/about-v1-shape2.png" alt="#"></div>
             <div class="shape3"></div>
             <div class="about-one__bg" style="background-image: url(assets/images/about/about-v1-img1.png);">
-                <div class="about-one__bg-content">
-                    <div class="img-box">
-                        <div class="inner">
-                            <img src="assets/images/about/about-v1-img3.jpg" alt="#">
-                        </div>
-                        <div class="content-box">
-                            <div class="icon-box">
-                                <span class="icon-butterflies"></span>
-                            </div>
-
-                            <div class="text-box">
-                                <h2>Cash flow <br> management</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
             </div>
             <div class="container">
                 <div class="row">
@@ -700,35 +297,33 @@
                     <!--Start About One Content-->
                     <div class="col-xl-6">
                         <div class="about-one__content">
-                            <div class="sec-title">
+                            <div class="sec-title mt-3">
                                 <div class="sec-title__tagline">
                                     <h6>About Us </h6>
                                     <span class="right"></span>
                                 </div>
-                                <h2 class="sec-title__title">Grow Your Garden And <br> Your Health</h2>
+                                <h2 class="sec-title__title">Nanotechnology <br> What is it?  <br> Why does it matter?</h2>
                             </div>
 
                             <div class="about-one__content-text1">
-                                <p class="text1">Ut enim ad minim veniam, quis nostrud exercitation ullamla
-                                    ut aliquip ex ea commodo consequat</p>
-                                <p class="text2">Sapien nunced amet sit ipsum velit purus aliq massa fringilla leo.
-                                    Lorem ipsum is simply free text dolor sit am adipi we help you ensure
-                                    everyTincidunt elit magnis nulla facilisis sagittis maecenas. </p>
+                                <p class="text1">Nanotechnology is the science, engineering, and application of materials and devices with dimensions and tolerances in the nanometer range (one billionth of a meter)</p>
+                                <p class="text2">Science of size manipulation to either increase or decrease particle size into nanometers. Comparatively nanoparticle is 11/200-1/300 smaller than the average size of human cells.</p>
                             </div>
 
                             <div class="about-one__content-text2">
                                 <div class="row">
                                     <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="about-one__content-text2-single">
-                                            <h3> <span class="icon-confirmation"></span> Pruning Plants</h3>
-                                            <p>Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                                            <h3> <span class="icon-confirmation"></span>Semi Quantum Physics</h3>
+                                            <p>
+                                            Nanoparticle physics falls between quantum and Newtonian laws, causing materials to change function and mechanism due to their size.</p>
                                         </div>
                                     </div>
 
                                     <div class="col-xl-6 col-lg-6 col-md-6">
                                         <div class="about-one__content-text2-single">
-                                            <h3> <span class="icon-confirmation"></span> Lawn Maintenance</h3>
-                                            <p>Lorem ipsum dolor sit ame sedme consectetur nod.</p>
+                                            <h3> <span class="icon-confirmation"></span> Higher Surface Area</h3>
+                                            <p>Nanoparticle have larger surface area when compared to the same volume of material made up of bigger particles.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -748,8 +343,8 @@
                                     </div>
 
                                     <div class="text-box">
-                                        <h3>Mike Hardson</h3>
-                                        <p>CEO of Garden</p>
+                                        <h3>Dr.Hansen</h3>
+                                        <p>CEO of Agrio Pesticide</p>
                                     </div>
                                 </div>
                             </div>
@@ -761,76 +356,6 @@
             </div>
         </section>
         <!--End About One -->
-
-        <!--Start Brand One-->
-        <section class="brand-one">
-            <div class="auto-container">
-                <div class="thm-swiper__slider swiper-container" data-swiper-options='{"spaceBetween": 100, "slidesPerView": 5, "autoplay": { "delay": 5000 }, "breakpoints": {
-                                    "0": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 1
-                                    },
-                                    "375": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 1
-                                    },
-                                    "575": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 2
-                                    },
-                                    "767": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 2
-                                    },
-                                    "991": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 3
-                                    },
-                                    "1199": {
-                                        "spaceBetween": 30,
-                                        "slidesPerView": 5
-                                    }
-                                }}'>
-                    <div class="swiper-wrapper">
-
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img1.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img2.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img3.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img4.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img5.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img1.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img2.png" alt="#">
-                        </div>
-
-                        <div class="swiper-slide">
-                            <img src="assets/images/brand/brand-v1-img3.png" alt="#">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--End Brand One -->
-
 
         <!--Start Contact One-->
         <section class="contact-one">
@@ -924,10 +449,10 @@
                 <div class="sec-title text-center">
                     <div class="sec-title__tagline">
                         <span class="left"></span>
-                        <h6>Our Services</h6>
+                        <h6>Plantation</h6>
                         <span class="right"></span>
                     </div>
-                    <h2 class="sec-title__title">Professional Featured</h2>
+                    <h2 class="sec-title__title">Our Plantation</h2>
                 </div>
 
                 <div class="row">
@@ -953,8 +478,8 @@
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Irrigation And <br> Drainage </a></h2>
-                                <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -982,8 +507,8 @@
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Tree And Shrub <br> Services </a></h2>
-                                <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -1011,8 +536,8 @@
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Garden Commercial <br> Landscaping </a></h2>
-                                <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -1040,8 +565,8 @@
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Lawn And Garden br Care</a></h2>
-                                <p>I was impresed by the agrion services, not lorem ipsum is simply free text.</p>
+                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                             </div>
                         </div>
                     </div>
@@ -1059,11 +584,11 @@
             <div class="container">
                 <div class="sec-title">
                     <div class="sec-title__tagline">
-                        <h6>Our Projects </h6>
+                        <h6>Plantation</h6>
                         <span class="right"></span>
                     </div>
                     <h2 class="sec-title__title">We Have Successful <span class="odometer" data-count="50">00</span>
-                        <span class="plus">+</span> <br> More Projects</h2>
+                        <span class="plus">+</span> <br> In Indonesia</h2>
                 </div>
 
                 <div class="projects-one__inner">
@@ -1161,243 +686,10 @@
                                                 Innovations</a></h2>
                                     </div>
                                 </div>
-=======
-    <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Farmi - Organic Farm Agriculture Template">
-
-    <!-- ========== Page Title ========== -->
-    <title>Agrio Pestisida Organik - NSI</title>
-
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="{{ asset('assets/img/favicon.png') }}" type="image/x-icon">
-
-    <!-- ========== Start Stylesheet ========== -->
-    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/themify-icons.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/flaticon-set.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/magnific-popup.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/owl.carousel.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/owl.theme.default.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/animate.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/bootsnav.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/css/beranda.css') }}" rel="stylesheet">
-    <link href="{{ asset('assets/css/responsive.css') }}" rel="stylesheet" />
-
-    <!-- ========== End Stylesheet ========== -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="assets/js/html5/html5shiv.min.js"></script>
-      <script src="assets/js/html5/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body class="green">
-
-    <!-- Preloader Start -->
-    <div class="se-pre-con"></div>
-    <!-- Preloader Ends -->
-
-
-    <!-- Start Header Top 
-    ============================================= -->
-    
-    <!-- End Header Top -->
-
-    <!-- Header 
-    ============================================= -->
-    <header id="home">
-
-        <!-- Start Navigation -->
-        <nav class="navbar navbar-default navbar-sticky bootsnav">
-
-            <div class="container">
-
-                <!-- Start Atribute Navigation -->
-                <div class="attr-nav inc-border">
-                    <ul>
-                        <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
-                    </ul>
-                </div>        
-                <!-- End Atribute Navigation -->
-
-                <!-- Start Header Navigation -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-                        <i class="fa fa-bars"></i>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/agrio.png" class="logo" alt="Logo">
-                    </a>
-                </div>
-                <!-- End Header Navigation -->
-
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="navbar-menu">
-                    <ul class="nav navbar-nav navbar-center" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li class="dropdown">
-                            <a data-toggle="dropdown">Home</a>
-                        </li>
-                        <li><a href="#aboutUs">About Us</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html">Region</a></li>
-                                <li><a href="team.html">fertilizer</a></li>
-                                <li><a href="contact.html">plants</a></li>
-                                <li><a href="404.html">Weekly</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div><!-- /.navbar-collapse -->
-            </div>
-
-            <!-- Start Side Menu -->
-            <div class="side">
-                <a href="#" class="close-side"><i class="ti-close"></i></a>
-                <div class="widget">
-                    <h4 class="title">Get in touch</h4>
-                    <p>
-                        Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
-                    </p>
-                    <a href="#" class="btn btn-theme effect btn-sm" data-animation="animated slideInUp">Consultation</a>
-                </div>
-                <div class="widget">
-                    <h4 class="title">Additional Links</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Register</a></li>
-                    </ul>
-                </div>
-                <div class="widget social">
-                    <h4 class="title">Connect With Us</h4>
-                    <ul class="link">
-                        <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                        <li class="dribbble"><a href="#"><i class="fab fa-dribbble"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Side Menu -->
-
-
-        </nav>
-        <!-- End Navigation -->
-
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Banner 
-    ============================================= -->
-    <div class="banner-area content-less text-center">
-        <div id="bootcarousel" class="carousel large-text text-light slide carousel-fade animate_text" data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner carousel-zoom">
-                <div class="carousel-item active">
-                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell shadow dark">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="content">
-                                            <h2 data-animation="animated fadeInUp">Organic Pesticide & BioBooster</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slider-thumb bg-fixed" style="background-image: url(assets/img/2440x1578.png);"></div>
-                    <div class="box-table">
-                        <div class="box-cell shadow dark">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="content">
-                                            <h3 data-animation="animated slideInLeft">Agrio Pesticide</h3>
-                                            <h2 data-animation="animated slideInRight">Nanotechnology <br>For future</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Wrapper for slides -->
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control shadow light" href="#bootcarousel" data-slide="prev">
-                <i class="ti-angle-left"></i>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control shadow light" href="#bootcarousel" data-slide="next">
-                <i class="ti-angle-right"></i>
-                <span class="sr-only">Next</span>
-            </a>
-
-        </div>
-    </div>
-    <!-- End Banner -->
-
-    <!-- Star About Area
-    ============================================= -->
-    <div class="about-content-area single-thumb overflow-hidden inc-shape default-padding">
-        <!-- Illustration -->
-        <div class="illustration">
-            <img src="assets/img/shape/4.png" alt="Illustration">
-        </div>
-        <!-- Illustration -->
-        <div class="container">
-            <div class="row">
-                
-                <div id="aboutUs" class="col-lg-6 info">
-                    <div class="content">
-                        <h5>Who we are</h5>
-                        <h2 class="area-title">Beautiful landscapes and the farmers Who bring us our food</h2>
-                        <p>
-                            Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable he followed speedily. Indeed vanity excuse or mr lovers of on.
-                        </p>
-                        <a class="btn circle btn-theme border btn-md" href="#">More About</a>
-                    </div>
-                    <ul class="achivement">
-                        <li>
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <div class="timer" data-to="8600" data-speed="5000">8600</div>
-                                    <div class="operator">+</div>
-                                </div>
-                                <span class="medium">Tons of harvesta</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <div class="timer" data-to="100" data-speed="5000">100</div>
-                                    <div class="operator">%</div>
-                                </div>
-                                <span class="medium">Organic Product</span>
->>>>>>> parent of 5b50e58 (Revert "Frontend")
                             </div>
                         </li>
                     </ul>
                 </div>
-<<<<<<< HEAD
             </div>
         </section>
         <!--End Projects One-->
@@ -1502,1223 +794,6 @@
         </section>
         <!--End Work Process One-->
 
-        <!--Start Faq One -->
-        <section class="faq-one">
-            <div class="shape1"></div>
-            <div class="container">
-                <div class="row">
-                    <!--Start Faq One Progress-->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__progress">
-                            <div class="sec-title">
-                                <div class="sec-title__tagline">
-                                    <h6>Our Faq</h6>
-                                    <span class="right"></span>
-                                </div>
-                                <h2 class="sec-title__title">Our Frequently Asked <br> Some Question</h2>
-                            </div>
-
-                            <!--Start Faq One Progress Single-->
-                            <div class="faq-one__progress-single">
-                                <h4 class="faq-one__progress-title">Soil Re-bulding
-                                </h4>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar" data-percent="90%">
-                                        <div class="count-text">90%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Faq One Progress Single-->
-
-                            <!--Start Faq One Progress Single-->
-                            <div class="faq-one__progress-single">
-                                <h4 class="faq-one__progress-title">Landscaping Ground
-                                </h4>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar" data-percent="80%">
-                                        <div class="count-text">80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Faq One Progress Single-->
-
-                            <!--Start Faq One Progress Single-->
-                            <div class="faq-one__progress-single mb0">
-                                <h4 class="faq-one__progress-title">Planting Plants
-                                </h4>
-                                <div class="bar">
-                                    <div class="bar-inner count-bar" data-percent="70%">
-                                        <div class="count-text">70%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End Faq One Progress Single-->
-                        </div>
-                    </div>
-                    <!--End Faq One Progress-->
-
-                    <!--Start Faq One Accordion-->
-                    <div class="col-xl-6 col-lg-6">
-                        <div class="faq-one__accordion">
-                            <ul class="accordion-box">
-                                <li class="accordion block active-block">
-                                    <div class="acc-btn active">
-                                        <div class="icon-outer">
-                                            <i class="icon-up-arrow"></i>
-                                        </div>
-                                        <h3>
-                                            How Does Gardening Make You Feel ?
-                                        </h3>
-                                    </div>
-                                    <div class="acc-content current">
-                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo
-                                            ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
-                                    </div>
-                                </li>
-
-                                <li class="accordion block">
-                                    <div class="acc-btn">
-                                        <div class="icon-outer">
-                                            <i class="icon-up-arrow"></i>
-                                        </div>
-                                        <h3>
-                                            Do Gardens Help The Environment ?
-                                        </h3>
-                                    </div>
-                                    <div class="acc-content">
-                                        <p>Suspendisse finibus urna mauris, vitae consequat quam vel. Vestibulum leo
-                                            ligula, vit commodo nisl Sed luctus venenatis pellentesque.</p>
-=======
-                <div class="col-lg-6">
-                    <div class="thumb">
-                        <img src="assets/img/800x800.png" alt="Thumb">
-                        <div class="experience">
-                            <h2><strong>36+</strong> Years of experience</h2>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- End About Area -->
-
-    <!-- Start Services 
-    ============================================= -->
-    <div class="thumb-services-area half-bg bg-gradient-green default-padding bottom-less">
-        <div class="container">
-            <div class="heading-left text-light">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <h1 class="text-invisible">
-                            Nanotechnology
-                        </h1>
-                        <h5>What's Nanotechnology?</h5>
-                        <h2>
-                            Why Choose Agrio Organik for plant
-                        </h2>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1">
-                        <p>
-                            Science of size manipulation to either increase or decrease particle size into nanometers. Comparatively nanoparticle is 1/200-1/300 smaller than the average size of human cells.                        </p>
-                        <a class="btn circle btn-md btn-theme effect" href="#">View All <i class="fas fa-angle-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="services-content-box">
-            <div class="container">
-                <div class="services-items services-carousel owl-carousel owl-theme">
-                    <!-- Single Item -->
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/800x600.png" alt="Thumb">
-                        </div>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-fertilizer"></i>
-                            </div>
-                            <div class="title">
-                                <h5><a href="#">Agriculture Products</a></h5>
-                            </div>
-                            <p>
-                                Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/800x600.png" alt="Thumb">
-                        </div>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-vegetable"></i>
-                            </div>
-                            <div class="title">
-                                <h5><a href="#">Fresh Vegetables</a></h5>
-                            </div>
-                            <p>
-                                Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/800x600.png" alt="Thumb">
-                        </div>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-honeycomb"></i>
-                            </div>
-                            <div class="title">
-                                <h5><a href="#">Oragnic Products</a></h5>
-                            </div>
-                            <p>
-                                Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/800x600.png" alt="Thumb">
-                        </div>
-                        <div class="content">
-                            <div class="icon">
-                                <i class="flaticon-grain"></i>
-                            </div>
-                            <div class="title">
-                                <h5><a href="#">Dairy Products</a></h5>
-                            </div>
-                            <p>
-                                Coming merits and was talent enough far. Sir joy northward sportsmen education. Discovery incommode earnestly no. 
-                            </p>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Services Area -->
-
-    <!-- Start Product 
-    ============================================= -->
-    <div class="our-product-area text-center default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>Our Product</h4>
-                        <h2>Fresh & Organic Product</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Single Product -->
-                <div class="col-lg-3 col-md-6 single-product">
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/thumb/1.png" alt="Thumb">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                        <div class="info">
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h4><a href="#">Broccoli</a></h4>
-                            <h5 class="price"><del>$29.00</del> $20.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-                <!-- Single Product -->
-                <div class="col-lg-3 col-md-6 single-product">
-                    <div class="item">
-                        <div class="offer">
-                            -20% Off
-                        </div>
-                        <div class="thumb">
-                            <img src="assets/img/thumb/1.png" alt="Thumb">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                        <div class="info">
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h4><a href="#">Fresh Apple</a></h4>
-                            <h5 class="price"><del>$45.00</del> $30.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-                <!-- Single Product -->
-                <div class="col-lg-3 col-md-6 single-product">
-                    <div class="item">
-                        <div class="thumb">
-                            <img src="assets/img/thumb/1.png" alt="Thumb">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                        <div class="info">
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h4><a href="#">Natural tomatoes</a></h4>
-                            <h5 class="price"><del>$18.00</del> $10.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-                <!-- Single Product -->
-                <div class="col-lg-3 col-md-6 single-product">
-                    <div class="item">
-                        <div class="offer">
-                            -30% Off
-                        </div>
-                        <div class="thumb">
-                            <img src="assets/img/thumb/1.png" alt="Thumb">
-                            <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                        <div class="info">
-                            <div class="product-rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                            <h4><a href="#">Fresh Orange</a></h4>
-                            <h5 class="price"><del>$36.00</del> $24.00</h5>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Single Product -->
-            </div>
-        </div>
-    </div>
-    <!-- End Product Area -->
-
-    <!-- Start Testimonials 
-    ============================================= -->
-    <div class="testimonials-area half-bg overflow-hidden text-light">
-        <div class="container">
-            <div class="tesimonials-content default-padding">
-                <div class="row">
-                    <div class="col-lg-4 info">
-                        <i class="flaticon-quotation"></i>
-                        <h5>Testimonials</h5>
-                        <h2>What our customers are talking about us</h2>
-                        <a class="btn circle btn-gradient green effect btn-md" href="#">View All <i class="fas fa-angle-right"></i></a>
-                    </div>
-                    <div class="col-lg-7 offset-lg-1 testimonials">
-                        <div class="testimonial-items">
-                            <div class="carousel slide" data-ride="carousel" id="testimonial-carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <p>
-                                            Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. guest man now heard but 
-                                        </p>
-                                        <h4>Junl Sarukh</h4>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <p>
-                                            Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. guest man now heard but  
-                                        </p>
-                                        <h4>Anil Spia</h4>
-                                        <span>Customer</span>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <p>
-                                            Lasted my coming uneasy marked so should. Gravity letters it amongst herself dearest an windows by. Wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. guest man now heard but  
-                                        </p>
-                                        <h4>Paul Munni</h4>
-                                        <span>Customer</span>
-                                    </div>
-                                </div>
-                                <!-- End Carousel Content -->
-
-                                <!-- Carousel Indicators -->
-                                <ol class="carousel-indicators">
-                                    <li data-target="#testimonial-carousel" data-slide-to="0" class="active">
-                                        <img src="assets/img/100x100.png" alt="Thumb">
-                                    </li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="1">
-                                        <img src="assets/img/100x100.png" alt="Thumb">
-                                    </li>
-                                    <li data-target="#testimonial-carousel" data-slide-to="2">
-                                        <img src="assets/img/100x100.png" alt="Thumb">
-                                    </li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Testimonials Area -->
-
-    <!-- Start Team 
-    ============================================= -->
-    <div class="team-area bg-gray default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>Our Team</h4>
-                        <h2>Professional Farmers</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="team-items text-center">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="pinterest">
-                                        <a href="#">
-                                            <i class="fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <span>Farmer of tomatoes</span>
-                                <h4>Brian Paul</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="pinterest">
-                                        <a href="#">
-                                            <i class="fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <span>Farmer of potato</span>
-                                <h4>Akhon Bru</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x900.png" alt="Thumb">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="pinterest">
-                                        <a href="#">
-                                            <i class="fab fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="info">
-                                <span>Farmer of cherry</span>
-                                <h4>Denis Khua</h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Team Area -->
-
-    <!-- Start Specialty 
-    ============================================= -->
-    <div class="specialty-area half-bg bg-gray overflow-hidden">
-        <div class="container-full">
-            <div class="specialty-items default-padding">
-                <!-- Fixed BG -->
-                <div class="fixed-bg bg-fixed shadow dark" style="background-image: url(assets/img/2440x1578.png);">
-                    
-                </div>
-                <!-- End Fixed BG -->
-                <div class="row">
-                    <div class="col-lg-4 info text-light">
-                        <h2>All you need for agriculture hard work & professional</h2>
-                        <a class="btn circle btn-light border btn-md" href="#">View More</a>
-                    </div>
-                    <div class="col-lg-8">
-                        <div class="specialty-contents specialty-carousel owl-carousel owl-theme text-center">
-                            <div class="item">
-                                <i class="flaticon-menu"></i>
-                                <h5>Quality Standards</h5>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share least.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <i class="flaticon-healthy-food"></i>
-                                <h5>Healthy Food</h5>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share least.
-                                </p>
-                            </div>
-                            <div class="item">
-                                <i class="flaticon-farmer-1"></i>
-                                <h5>Agriculture Leader</h5>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share least.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Specialty Area -->
-
-    <!-- Start Fun Factor Area
-    ============================================= -->
-    <div class="fun-factor-area default-padding">
-        <!-- Illustration -->
-        <div class="illustration wow fadeInDown">
-            <img src="assets/img/thumb/5.png" alt="Illustration">
-        </div>
-        <!-- End Illustration -->
-        <div class="container">
-            <div class="fun-fact-items text-center">
-                <h2 class="text-invisible">Achivement</h2>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="fun-fact">
-                            <div class="timer" data-to="687" data-speed="5000">687</div>
-                            <span class="medium">Agriculture Products</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="fun-fact">
-                            <div class="timer" data-to="655" data-speed="5000">655</div>
-                            <span class="medium">Expert Farmers</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="fun-fact">
-                            <div class="timer" data-to="450" data-speed="5000">450</div>
-                            <span class="medium">Units of Cattle</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="fun-fact">
-                            <div class="timer" data-to="1200" data-speed="5000">1200</div>
-                            <span class="medium">Hectares of farm</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Fun Factor Area -->
-
-    <!-- Start Blog 
-    ============================================= -->
-    <div class="blog-area bg-gray default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <h4>From the blog</h4>
-                        <h2>Latest News & Articles</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="blog-items">
-                <div class="row">
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="date">January 25, 2021</div>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="#">Discovery incommode earnestly commanded if.</a>
-                                </h4>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share. 
-                                </p>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><img src="assets/img/100x100.png" alt="Author"> Met John</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="date">February 12, 2021</div>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="#">Expression acceptance imprudence particular</a>
-                                </h4>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share. 
-                                </p>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><img src="assets/img/100x100.png" alt="Author"> Mark Adam</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="single-item col-lg-4 col-md-6">
-                        <div class="item">
-                            <div class="thumb">
-                                <img src="assets/img/800x600.png" alt="Thumb">
-                                <div class="date">March 18, 2021</div>
-                            </div>
-                            <div class="info">
-                                <h4>
-                                    <a href="#">Provided so as doubtful on striking required point</a>
-                                </h4>
-                                <p>
-                                    Easy mind life fact with see has bore ten. Parish any chatty can elinor direct for former. Up as meant widow equal an share. 
-                                </p>
-                                <div class="meta">
-                                    <ul>
-                                        <li><a href="#"><img src="assets/img/100x100.png" alt="Author"> Paul Ahua</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Blog Area -->
-
-    <!-- Start Contact 
-    ============================================= -->
-    <div class="contact-area default-padding">
-        <div class="container-full">
-            <div class="contact-items">
-                <div class="row align-center">
-                    <div class="col-lg-3 contact-info">
-                        <ul>
-                             <li>
-                                <h4>Our Location</h4>
-                                <span>22 Baker Street,<br> London, United Kingdom,<br> W1U 3BW</span>
-                            </li>
-                            <li>
-                                <h4>Phone</h4>
-                                <span>+44-20-7328-4499 <br>+99-34-8878-9989</span>
-                            </li>
-                            <li>
-                                <h4>Email</h4>
-                                <span>info@yourdomain.com<br>admin@yourdomain.com</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="form-content">
-                            <h2>Leave a message</h2>
-                            <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-group">
-                                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group">
-                                            <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                            <span class="alert-error"></span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <div class="form-group comments">
-                                            <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need."></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-12">
-                                        <button type="submit" name="submit" id="submit">
-                                            Send Now
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- Alert Message -->
-                                <div class="col-md-12 alert-notification">
-                                    <div id="message" class="alert-msg"></div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="google-maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14767.262289338461!2d70.79414485000001!3d22.284975!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1424308883981"></iframe>
-        </div>
-    </div>
-    <!-- End Contact Area -->
-
-    <!-- Start Footer 
-    ============================================= -->
-    <footer class="bg-dark text-light">
-        <!-- Fixed Shape -->
-        <div class="fixed-shape">
-            <img src="assets/img/shape/2.png" alt="Shape">
-        </div>
-        <!-- Fixed Shape -->
-        <div class="container">
-            <div class="f-items default-padding">
-                <div class="row">
-                    <!-- Single Itme -->
-                    <div class="col-lg-4 col-md-6 item">
-                        <div class="f-item about">
-                            <img src="assets/img/logo-light.png" alt="Logo">
-                            <p>
-                                Happen active county. Winding for the morning am shyness evident to poor. Garrets because elderly new to the point.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Subscribe</button>  
-                            </form>
-                        </div>
-                    </div>
-                    <!-- End Single Itme -->
-
-                    <!-- Single Itme -->
-                    <div class="col-lg-2 col-md-6 item">
-                        <div class="f-item link">
-                            <h4 class="widget-title">Explore</h4>
-                            <ul>
-                                <li>
-                                    <a href="#">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Meet Our Team</a>
-                                </li>
-                                <li>
-                                    <a href="#">News & Media</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact Us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Volunteers</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Single Itme -->
-
-                    <!-- Single Itme -->
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item recent-post">
-                            <h4 class="widget-title">Recent Posts</h4>
-                            <ul>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="assets/img/800x800.png" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">Meant widow equal an share least part. </a>
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Feb, 2019</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="assets/img/800x800.png" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <a href="#">Future Plan & Strategy for Consutruction </a>
-                                        <div class="meta-title">
-                                            <span class="post-date">18 Mar, 2019</span>
-                                        </div>
->>>>>>> parent of 5b50e58 (Revert "Frontend")
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-<<<<<<< HEAD
-                    <!--End Faq One Accordion-->
-                </div>
-            </div>
-        </section>
-        <!--End Faq One -->
-
-        <!--Start Testimonial One -->
-        <section class="testimonial-one">
-            <div class="shape2"></div>
-            <div class="shape5"></div>
-            <div class="container">
-                <div class="row">
-                    <!--Start Testimonial One Img-->
-                    <div class="col-xl-6">
-                        <div class="testimonial-one__img">
-                            <div class="shape1"></div>
-                            <div class="shape3"></div>
-                            <div class="shape4"></div>
-                            <div class="testimonial-one__img1">
-                                <img src="assets/images/testimonial/testimonial-v1-img1.png" alt="#">
-                            </div>
-                            <div class="testimonial-one__img2">
-                                <img src="assets/images/testimonial/testimonial-v1-img2.png" alt="#">
-                            </div>
-
-                            <div class="testimonial-one__img3">
-                                <img src="assets/images/testimonial/testimonial-v1-img3.png" alt="#">
-                            </div>
-
-                            <div class="testimonial-one__img4">
-                                <img src="assets/images/testimonial/testimonial-v1-img4.png" alt="#">
-                            </div>
-
-                            <div class="testimonial-one__img5">
-                                <img src="assets/images/testimonial/testimonial-v1-img5.png" alt="#">
-                            </div>
-
-                            <div class="testimonial-one__img6">
-                                <img src="assets/images/testimonial/testimonial-v1-img1.png" alt="#">
-                            </div>
-
-                            <div class="testimonial-one__img7">
-                                <div class="inner">
-                                    <img src="assets/images/testimonial/testimonial-v1-img6.png" alt="#">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Testimonial One Img-->
-
-
-                    <!--Start Testimonial One Content-->
-                    <div class="col-xl-6">
-                        <div class="testimonial-one__content">
-                            <div class="sec-title">
-                                <div class="sec-title__tagline">
-                                    <h6>Our Client</h6>
-                                    <span class="right"></span>
-                                </div>
-                                <h2 class="sec-title__title">Our Sweet Client Say</h2>
-                            </div>
-
-                            <div class="testimonial-one__content-inner">
-
-                                <div class="owl-carousel owl-theme thm-owl__carousel testimonial-one__carousel"
-                                    data-owl-options='{
-                                    "loop": true,
-                                    "autoplay": true,
-                                    "margin": 0,
-                                    "nav": false,
-                                    "dots": true,
-                                    "smartSpeed": 500,
-                                    "autoplayTimeout": 10000,
-                                    "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                                    "responsive": {
-                                            "0": {
-                                                "items": 1
-                                            },
-                                            "768": {
-                                                "items": 1
-                                            },
-                                            "992": {
-                                                "items": 1
-                                            },
-                                            "1200": {
-                                                "items": 1
-                                            }
-                                        }
-                                    }'>
-
-                                    <!--Start Testimonial One Single-->
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__single-bg"
-                                            style="background-image: url(assets/images/shapes/testimonial-v1-shape1.png);">
-                                        </div>
-                                        <div class="inner">
-                                            <div class="img-box">
-                                                <div class="inner-box">
-                                                    <img src="assets/images/testimonial/testimonial-v1-img7.jpg"
-                                                        alt="#">
-                                                </div>
-                                                <div class="icon-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p>There are many variations of passage of available but the majority
-                                                    have
-                                                    suffered alteration in some form by injected humor or randomed.</p>
-
-                                                <div class="client-info">
-                                                    <div class="text-box">
-                                                        <h2>Bonnie tolbet</h2>
-                                                        <p>Customer</p>
-                                                    </div>
-
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Testimonial One Single-->
-
-                                    <!--Start Testimonial One Single-->
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__single-bg"
-                                            style="background-image: url(assets/images/shapes/testimonial-v1-shape1.png);">
-                                        </div>
-                                        <div class="inner">
-                                            <div class="img-box">
-                                                <div class="inner-box">
-                                                    <img src="assets/images/testimonial/testimonial-v1-img7.jpg"
-                                                        alt="#">
-                                                </div>
-                                                <div class="icon-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p>There are many variations of passage of available but the majority
-                                                    have
-                                                    suffered alteration in some form by injected humor or randomed.</p>
-
-                                                <div class="client-info">
-                                                    <div class="text-box">
-                                                        <h2>Bonnie tolbet</h2>
-                                                        <p>Customer</p>
-                                                    </div>
-
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Testimonial One Single-->
-
-                                    <!--Start Testimonial One Single-->
-                                    <div class="testimonial-one__single">
-                                        <div class="testimonial-one__single-bg"
-                                            style="background-image: url(assets/images/shapes/testimonial-v1-shape1.png);">
-                                        </div>
-                                        <div class="inner">
-                                            <div class="img-box">
-                                                <div class="inner-box">
-                                                    <img src="assets/images/testimonial/testimonial-v1-img7.jpg"
-                                                        alt="#">
-                                                </div>
-                                                <div class="icon-box">
-                                                    <span class="icon-quote"></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="content-box">
-                                                <p>There are many variations of passage of available but the majority
-                                                    have
-                                                    suffered alteration in some form by injected humor or randomed.</p>
-
-                                                <div class="client-info">
-                                                    <div class="text-box">
-                                                        <h2>Bonnie tolbet</h2>
-                                                        <p>Customer</p>
-                                                    </div>
-
-                                                    <div class="rating-box">
-                                                        <ul>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                            <li>
-                                                                <span class="icon-pointed-star"></span>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--End Testimonial One Single-->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Testimonial One Content-->
-                </div>
-            </div>
-        </section>
-        <!--End Testimonial One -->
-
-
-        <!--Start Excellent Work One -->
-        <section class="excellent-work-one">
-            <div class="shape1 wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms"><img
-                    class="float-bob-y" src="assets/images/shapes/excellent-work-v1-shape1.png" alt="#"></div>
-            <div class="excellent-work-one__bg"
-                style="background-image: url(assets/images/backgrounds/excellent-work-v1-bg.jpg);">
-
-                <div class="content-box">
-                    <div class="img-box">
-                        <img src="assets/images/resources/excellent-work-v1-img2.png" alt="#">
-                    </div>
-                    <div class="text-box">
-                        <h2>We Have Solution For Your Garden</h2>
-                    </div>
-
-                    <div class="btn-box">
-                        <a class="thm-btn" href="contact.html">
-                            <span class="txt">Contact Now</span>
-                            <i class="fa fa-angle-double-right"></i>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6"></div>
-
-                    <!--Start Excellent Work One Content-->
-                    <div class="col-xl-6">
-                        <div class="excellent-work-one__content">
-                            <div class="sec-title">
-                                <div class="sec-title__tagline">
-                                    <h6>Excellent Work</h6>
-                                    <span class="right"></span>
-                                </div>
-                                <h2 class="sec-title__title">We Work at a Landscape <br> Company Process</h2>
-                            </div>
-
-                            <div class="text-box">
-                                <p>There cursus massa at urnaaculis estie. Sed aliquamellus vitae ultrs condmentum leo
-                                    massa mollis estiegittis massa at urnaaculis estie. miristum nulla sed medy
-                                    fringilla vitae.</p>
-                            </div>
-
-                            <div class="excellent-work-one__progress">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="excellent-work-one__progress-single">
-                                            <div class="progress-box">
-                                                <div class="graph-outer">
-                                                    <input type="text" class="dial" data-fgColor="#79b823"
-                                                        data-bgColor="#dbe3e0" data-width="110" data-height="110"
-                                                        data-linecap="normal" value="90">
-                                                    <div class="inner-text count-box"><span class="count-text"
-                                                            data-stop="90" data-speed="2000"></span><span
-                                                            class="count-Parsent">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="title-box">
-                                                <h2>Agriculture <br> Projects</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="excellent-work-one__progress-single">
-                                            <div class="progress-box">
-                                                <div class="graph-outer">
-                                                    <input type="text" class="dial" data-fgColor="#79b823"
-                                                        data-bgColor="#dbe3e0" data-width="110" data-height="110"
-                                                        data-linecap="normal" value="66">
-                                                    <div class="inner-text count-box"><span class="count-text"
-                                                            data-stop="66" data-speed="2000"></span><span
-                                                            class="count-Parsent">%</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="title-box">
-                                                <h2>Quality <br> products</h2>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                            <ul class="excellent-work-one__content-list">
-                                <li>
-                                    <p> <span class="icon-tick"></span> There are many variations of passage of
-                                        lorem.</p>
-                                </li>
-
-                                <li>
-                                    <p> <span class="icon-tick"></span> Available but the majority alteration.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--End Excellent Work One Content-->
-                </div>
-            </div>
-        </section>
-        <!--End Excellent Work One -->
-
 
         <!--Start Blog One -->
         <section class="blog-one">
@@ -2761,24 +836,6 @@
                                             agrees to settlement</a></h2>
                                     <p>Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
                                 </div>
-
-
-                                <div class="blog-one__single-content-bottom clearfix">
-                                    <ul class="clearfix">
-                                        <li>
-                                            <div class="comment-box">
-                                                <a href="#"> <span class="icon-conversation"></span> 3 comments</a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="btn-box">
-                                                <a href="#">Read More <span class="icon-right-arrow-1"></span></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
 
                             <div class="blog-one__single-img">
@@ -2786,65 +843,7 @@
                             </div>
                         </div>
                     </div>
-                    <!--End Blog One Single-->
 
-                    <!--Start Blog One Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInDown" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-content">
-                                <ul class="meta-box clearfix">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-calendar"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> January 2, 2023 </a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> by Admin</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="blog-one__single-content-inner">
-                                    <h2><a href="blog-details.html">Complete solution for your
-                                            land & garden design</a></h2>
-                                    <p>Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
-                                </div>
-
-
-                                <div class="blog-one__single-content-bottom clearfix">
-                                    <ul class="clearfix">
-                                        <li>
-                                            <div class="comment-box">
-                                                <a href="#"> <span class="icon-conversation"></span> 3 comments</a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="btn-box">
-                                                <a href="#">Read More <span class="icon-right-arrow-1"></span></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                            </div>
-
-                            <div class="blog-one__single-img">
-                                <img src="assets/images/blog/blog-v1-img2.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog One Single-->
-
-                    <!--Start Blog One Single-->
                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
                         <div class="blog-one__single">
                             <div class="blog-one__single-content">
@@ -2869,32 +868,14 @@
                                 </ul>
 
                                 <div class="blog-one__single-content-inner">
-                                    <h2><a href="blog-details.html">The environment benefits
-                                            of tower gardens</a></h2>
+                                    <h2><a href="blog-details.html">Ex-homeless shelter head
+                                            agrees to settlement</a></h2>
                                     <p>Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
                                 </div>
-
-
-                                <div class="blog-one__single-content-bottom clearfix">
-                                    <ul class="clearfix">
-                                        <li>
-                                            <div class="comment-box">
-                                                <a href="#"> <span class="icon-conversation"></span> 3 comments</a>
-                                            </div>
-                                        </li>
-
-                                        <li>
-                                            <div class="btn-box">
-                                                <a href="#">Read More <span class="icon-right-arrow-1"></span></a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-
                             </div>
 
                             <div class="blog-one__single-img">
-                                <img src="assets/images/blog/blog-v1-img3.jpg" alt="#">
+                                <img src="assets/images/blog/blog-v1-img1.jpg" alt="#">
                             </div>
                         </div>
                     </div>
@@ -2947,7 +928,7 @@
                                     <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.2s">
                                         <div class="footer-one__right-single mb50">
                                             <div class="title">
-                                                <h2>Our Services</h2>
+                                                <h2>Plantation</h2>
                                             </div>
                                             <div class="footer-one__right-single-services">
                                                 <ul class="footer-one__right-single-list">
@@ -3030,85 +1011,17 @@
                 <div class="container">
                     <div class="bottom-inner">
                         <div class="copyright">
-                            <p>Copyright © 2023 All Rights Reserved.</p>
+                            <p>Copyright © 2024 Agrio Pestisida Organik.</p>
                         </div>
 
                         <ul class="footer-one__bottom-menu">
                             <li><a href="about.html">Terms & Condition</a></li>
                             <li><a href="about.html">Privacy </a></li>
                             <li><a href="about.html">Support</a></li>
-=======
-                    <!-- End Single Itme -->
-
-                    <!-- Single Itme -->
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="f-item">
-                            <h4 class="widget-title">Contact Info</h4>
-                            <div class="address">
-                                <ul>
-                                    <li>
-                                        <strong>Address: </strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham AL 35235
-                                    </li>
-                                    <li>
-                                        <strong>Email: </strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
-                                    </li>
-                                    <li>
-                                        <strong>Phone: </strong>
-                                        <a href="#"> +123 456 7890</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="social">
-                                <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="youtube">
-                                        <a href="#">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Itme -->
-                </div>
-            </div>
-        </div>
-        <!-- Start Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <p>Copyright &copy;  2021. Designed by <a href="#">validthemes</a></p>
-                    </div>
-                    <div class="col-md-6 text-right link">
-                        <ul>
-                            <li>
-                                <a href="#">Terms</a>
-                            </li>
-                            <li>
-                                <a href="#">Privacy</a>
-                            </li>
-                            <li>
-                                <a href="#">Support</a>
-                            </li>
->>>>>>> parent of 5b50e58 (Revert "Frontend")
                         </ul>
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
 
         </footer>
         <!--End Footer One-->
@@ -3131,7 +1044,7 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="fa fa-envelope"></i>
-                    <a href="mailto:info@example.com">info@example.com</a>
+                    <a href="mailto:info@example.com">AgrioPestisida@mail.com</a>
                 </li>
                 <li>
                     <i class="fa fa-phone-alt"></i>
@@ -3198,39 +1111,9 @@
 
     <!-- Template js -->
     <script src="{{ asset('assets/js/custom.js') }}"></script>
-=======
-        </div>
-        <!-- End Footer Bottom -->
-    </footer>
-    <!-- End Footer -->
-
-    <!-- jQuery Frameworks
-    ============================================= -->
-    <script src="{{ asset('assets/js/jquery-1.12.4.min.js') }}"></script>
-    <script src="{{ asset('assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('assets/js/equal-height.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.appear.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('assets/js/modernizr.custom.13711.js') }}"></script>
-    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/wow.min.js') }}"></script>
-    <script src="{{ asset('assets/js/progress-bar.min.js') }}"></script>
-    <script src="{{ asset('assets/js/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/js/count-to.js') }}"></script>
-    <script src="{{ asset('assets/js/YTPlayer.min.js') }}"></script>
-    <script src="{{ asset('assets/js/jquery.nice-select.min.js') }}"></script>
-    <script src="{{ asset('assets/js/bootsnav.js') }}"></script>
-    <script src="{{ asset('assets/js/main.js') }}"></script>
->>>>>>> parent of 5b50e58 (Revert "Frontend")
 
 
 
 </body>
-<<<<<<< HEAD
 
-=======
->>>>>>> parent of 5b50e58 (Revert "Frontend")
 </html>

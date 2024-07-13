@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="{{ asset('node_modules/summernote/dist/summernote-bs4.css') }}">
 
 <!-- Template CSS -->
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<link rel="stylesheet" href="{{ asset('assets/css/style-super.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
 
 </head>

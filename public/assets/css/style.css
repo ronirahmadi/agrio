@@ -981,6 +981,8 @@ img {
   z-index: 100;
 }
 
+
+
 .handle-preloader .animation-preloader .spinner {
   width: 150px;
   height: 150px;
@@ -1096,7 +1098,7 @@ animation: spinner 1s infinite linear;
 }
 
 .handle-preloader .animation-preloader .spinner {
-  border: 3px solid #ffffff;
+  border: 3px solid #79b823;
   /**border-top-color: rgba(255, 255, 255, 0.5); **/
 }
 

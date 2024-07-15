@@ -16,6 +16,48 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+
+/* SEARCH HAMA */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: 2px solid #28a745; /* Warna border */
+  background-color: #fff; /* Warna latar belakang */
+  width: 500px;
+}
+
+.search-container button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 2px solid #28a745; /* Warna border */
+  background-color: #28a745; /* Warna tombol */
+  color: #fff; /* Warna teks tombol */
+}
+
+.search-container button:hover {
+  background-color: #218838; /* Warna tombol saat hover */
+}
+
+.services-one__single-img-bg {
+  background-size: cover;
+  background-position: center;
+}
+
+.services-one__single-img img {
+  width: 100%;
+}
+
+/* selesai hama */
+
+
+
 :root {
   --thm-font: 'Poppins', sans-serif;
   --thm-font-2: 'Fredoka One', cursive;

@@ -125,21 +125,20 @@
 
                                             <ul class="main-menu__list">
                                                 <li class="dropdown current">
-                                                    <a href="index.html">Home <span class="line"></span></a>
+                                                    <a href="{{ route('beranda') }}">Home <span class="line"></span></a>
                                                 </li>
 
                                                 <li>
-                                                    <a href="about.html">About <span class="line"></span></a>
+                                                    <a href="{{ route('about') }}">About <span class="line"></span></a>
                                                 </li>
 
                                                 <li class="dropdown">
                                                     <a href="#">Pages <span class="line"></span></a>
                                                     <ul>
-                                                        <li><a href="team.html">Team</a></li>
-                                                        <li><a href="team-details.html">Team Details</a></li>
-                                                        <li><a href="portfolio-1.html">Portfolio 01</a></li>
-                                                        <li><a href="portfolio-2.html">Portfolio 02</a>
-                                                        <li><a href="faq.html">Faq</a>
+                                                        <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
+                                                        <li><a href="{{ route('jenishama') }}">Jenis Hama</a></li>
+                                                        <li><a href="{{ route('jenispupuk') }}">Jenis Pupuk</a></li>
+                                                        <li><a href="{{ route('jenislokasi') }}">Lokasi</a>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -196,7 +195,7 @@
 
                     <!--Start Main Slider One-->
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image:url(assets/images/slides/slider-v1-img1.jpg)">
+                        <div class="image-layer" style="background-image:url(assets/img/unsplash/bg1.jpg)">
                         </div>
                         <div class="shape1"><img class="float-bob-y" src="assets/images/shapes/slider-v1-shape1.png"
                                 alt="#"></div>
@@ -207,7 +206,7 @@
                         <div class="container">
                             <div class="main-slider-one__content">
                                 <div class="title">
-                                    <h2>Organik Pesticide<br> & Bio Booster</h2>
+                                    <h2>Organik <br> Pesticide & <br> Bio Booster</h2>
                                 </div>
                                 <div class="btn-box">
                                     <a class="thm-btn" href="contact.html">
@@ -222,7 +221,7 @@
 
                     <!--Start Main Slider One-->
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image:url(assets/images/slides/slider-v1-img2.jpg)">
+                        <div class="image-layer" style="background-image:url(assets/img/tanaman2.jpg)">
                         </div>
                         <div class="shape1"><img class="float-bob-y" src="assets/images/shapes/slider-v1-shape1.png"
                                 alt="#"></div>
@@ -246,7 +245,7 @@
 
                     <!--Start Main Slider One-->
                     <div class="swiper-slide">
-                        <div class="image-layer" style="background-image:url(assets/images/slides/slider-v1-img3.jpg)">
+                        <div class="image-layer" style="background-image:url(assets/img/tanaman1.jpg)">
                         </div>
                         <div class="shape1"><img class="float-bob-y" src="assets/images/shapes/slider-v1-shape1.png"
                                 alt="#"></div>
@@ -290,7 +289,7 @@
             <div class="shape1 float-bob-y"><img src="assets/images/shapes/about-v1-shape1.png" alt="#"></div>
             <div class="shape2 float-bob-y"><img src="assets/images/shapes/about-v1-shape2.png" alt="#"></div>
             <div class="shape3"></div>
-            <div class="about-one__bg" style="background-image: url(assets/images/about/about-v1-img1.png);">
+            <div class="about-one__bg" style="background-image: url(assets/img/tanaman1.jpg);">
                 
             </div>
             <div class="container">
@@ -340,9 +339,9 @@
                                 </div>
 
                                 <div class="client-info">
-                                    <div class="img-box">
+                                    <!-- <div class="img-box">
                                         <img src="assets/images/about/about-v1-img2.jpg" alt="#">
-                                    </div>
+                                    </div> -->
 
                                     <div class="text-box">
                                         <h3>Dr.Hansen</h3>
@@ -476,12 +475,12 @@
                                         <span class="icon-gardening-1"></span>
                                     </div>
                                 </div>
-                                <img src="assets/images/services/services-v1-img1.jpg" alt="#">
+                                <img src="assets/img/tanaman1.jpg" alt="#">
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <h2><a href="arbor-management.html">Yogyakarta</a></h2>
+                                <p>Yogyakarta yang berada di ketinggian 113 mdpl</p>
                             </div>
                         </div>
                     </div>
@@ -505,12 +504,12 @@
                                         <span class="icon-gardening-1"></span>
                                     </div>
                                 </div>
-                                <img src="assets/images/services/services-v1-img2.jpg" alt="#">
+                                <img src="assets/img/tanaman2.jpg" alt="#">
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <h2><a href="arbor-management.html">Temanggung</a></h2>
+                                <p>Temanggung yang berada di ketinggian 2.100 mdpl</p>
                             </div>
                         </div>
                     </div>
@@ -534,12 +533,12 @@
                                         <span class="icon-gardening-1"></span>
                                     </div>
                                 </div>
-                                <img src="assets/images/services/services-v1-img3.jpg" alt="#">
+                                <img src="assets/img/tanaman3.jpg" alt="#">
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <h2><a href="arbor-management.html">Magelang</a></h2>
+                                <p>Magelang yang berada di ketinggian 300 mdpl</p>
                             </div>
                         </div>
                     </div>
@@ -563,12 +562,12 @@
                                         <span class="icon-gardening-1"></span>
                                     </div>
                                 </div>
-                                <img src="assets/images/services/services-v1-img4.jpg" alt="#">
+                                <img src="assets/img/tanaman4.jpg" alt="#">
                             </div>
 
                             <div class="services-one__single-content text-center">
-                                <h2><a href="arbor-management.html">(kota yang sudah di testi) </a></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <h2><a href="arbor-management.html">Bali</a></h2>
+                                <p>Bali yang berada di ketinggian 2.020 mdpl </p>
                             </div>
                         </div>
                     </div>
@@ -581,7 +580,7 @@
 
         <!--Start Projects One-->
         <section class="projects-one">
-            <div class="projects-one__bg" style="background-image: url(assets/images/backgrounds/projects-v1-bg.jpg);">
+            <div class="projects-one__bg" style="background-image: url(assets/img/tanaman2.jpg);">
             </div>
             <div class="container">
                 <div class="sec-title">
@@ -589,8 +588,7 @@
                         <h6>Plantation</h6>
                         <span class="right"></span>
                     </div>
-                    <h2 class="sec-title__title">We Have Successful <span class="odometer" data-count="50">00</span>
-                        <span class="plus">+</span> <br> In Indonesia</h2>
+                    <h2 class="sec-title__title">We Have Successful<br> In Indonesia</h2>
                 </div>
 
                 <div class="projects-one__inner">
@@ -598,14 +596,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                             <div class="projects-one__single mb60">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img1.jpg" alt="#">
+                                    <img src="assets/img/tanaman1.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In <br>
+                                                Temanggung</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -614,14 +612,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
                             <div class="projects-one__single mb30">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img2.jpg" alt="#">
+                                    <img src="assets/img/tanaman2.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In<br>
+                                                Magelang</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -630,14 +628,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
                             <div class="projects-one__single">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img3.jpg" alt="#">
+                                    <img src="assets/img/tanaman3.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In <br>
+                                                Bali</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -646,14 +644,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s">
                             <div class="projects-one__single">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img4.jpg" alt="#">
+                                    <img src="assets/img/tanaman4.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In <br>
+                                                Kalimantan</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -662,14 +660,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.3s">
                             <div class="projects-one__single">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img5.jpg" alt="#">
+                                    <img src="assets/img/tanaman2.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In <br>
+                                                Yogyakarta</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -678,14 +676,14 @@
                         <li class="col-xl-4 col-lg-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.5s">
                             <div class="projects-one__single mb0">
                                 <div class="projects-one__single-img">
-                                    <img src="assets/images/project/projects-v1-img6.jpg" alt="#">
+                                    <img src="assets/img/tanaman4.jpg" alt="#">
                                     <div class="btn-box">
                                         <a href="#"><span class="icon-right-arrow-1"></span></a>
                                     </div>
                                     <div class="overlay-content">
                                         <span>farming</span>
-                                        <h2><a href="#">Harvest <br>
-                                                Innovations</a></h2>
+                                        <h2><a href="#">In <br>
+                                                Tegal</a></h2>
                                     </div>
                                 </div>
                             </div>
@@ -708,7 +706,7 @@
                         <h6>Work Process</h6>
                         <span class="right"></span>
                     </div>
-                    <h2 class="sec-title__title">How We Work Our Company</h2>
+                    <h2 class="sec-title__title">Agrio Distribution System</h2>
                 </div>
                 <div class="row filter-layout masonary-layout">
                     <!--Start Work Process One Single-->
@@ -723,8 +721,8 @@
                             </div>
 
                             <div class="work-process-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Genaret Uniq Idea</a></h2>
-                                <p>Simply free dumy text of <br> the printing and amet <br> piscing</p>
+                                <h2><a href="arbor-management.html">Registration Form</a></h2>
+                                <p>fill out the registration form</p>
 
                             </div>
                         </div>
@@ -743,9 +741,9 @@
                             </div>
 
                             <div class="work-process-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Friendly Services
+                                <h2><a href="arbor-management.html">Invoicing
                                     </a></h2>
-                                <p>Simply free dumy text of <br> the printing and amet <br> piscing</p>
+                                <p>After registration we will check <br> and provide an invoice</p>
 
                             </div>
                         </div>
@@ -764,8 +762,8 @@
                             </div>
 
                             <div class="work-process-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Set Design Target</a></h2>
-                                <p>Simply free dumy text of <br> the printing and amet <br> piscing</p>
+                                <h2><a href="arbor-management.html">Delivery Expedition</a></h2>
+                                <p>Fertilizer will be sent to the<br> destination address</p>
 
                             </div>
                         </div>
@@ -784,8 +782,8 @@
                             </div>
 
                             <div class="work-process-one__single-content text-center">
-                                <h2><a href="arbor-management.html">Pruning Plants</a></h2>
-                                <p>Simply free dumy text of <br> the printing and amet <br> piscing</p>
+                                <h2><a href="arbor-management.html">Customors</a></h2>
+                                <p>fertilizer will reach the <br> customer</p>
 
                             </div>
                         </div>
@@ -796,97 +794,6 @@
         </section>
         <!--End Work Process One-->
 
-
-        <!--Start Blog One -->
-        <section class="blog-one">
-            <div class="container">
-                <div class="sec-title text-center">
-                    <div class="sec-title__tagline">
-                        <span class="left"></span>
-                        <h6>Recent Posts</h6>
-                        <span class="right"></span>
-                    </div>
-                    <h2 class="sec-title__title">Latest News From Blog</h2>
-                </div>
-                <div class="row">
-                    <!--Start Blog One Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-content">
-                                <ul class="meta-box clearfix">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-calendar"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> January 2, 2023 </a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> by Admin</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="blog-one__single-content-inner">
-                                    <h2><a href="blog-details.html">Ex-homeless shelter head
-                                            agrees to settlement</a></h2>
-                                    <p>Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
-                                </div>
-                            </div>
-
-                            <div class="blog-one__single-img">
-                                <img src="assets/images/blog/blog-v1-img1.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="blog-one__single">
-                            <div class="blog-one__single-content">
-                                <ul class="meta-box clearfix">
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-calendar"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> January 2, 2023 </a></p>
-                                        </div>
-                                    </li>
-
-                                    <li>
-                                        <div class="icon">
-                                            <span class="icon-user"></span>
-                                        </div>
-                                        <div class="text">
-                                            <p><a href="#"> by Admin</a></p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                                <div class="blog-one__single-content-inner">
-                                    <h2><a href="blog-details.html">Ex-homeless shelter head
-                                            agrees to settlement</a></h2>
-                                    <p>Nulla commodo dolor massa, vel pellen esque nulla congue quis.</p>
-                                </div>
-                            </div>
-
-                            <div class="blog-one__single-img">
-                                <img src="assets/images/blog/blog-v1-img1.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Blog One Single-->
-
-                </div>
-            </div>
-        </section>
-        <!--End Blog One -->
 
         <!--Start Footer One -->
         <footer class="footer-one">

@@ -18,6 +18,7 @@
 <!-- Template CSS -->
 <link rel="stylesheet" href="{{ asset('assets/css/style-super.css') }}">
 <link rel="stylesheet" href="{{ asset('assets/css/components.css') }}">
+<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
 
 </head>
 
@@ -253,7 +254,8 @@
       </div>
       <div class="main-content">
 
-        @yield('superadmin.layouts.main')  
+        @include('sweetalert::alert')
+        @yield('superadmin.layouts.main') 
 
       </div>
 
@@ -275,21 +277,50 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="../assets/js/stisla.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
   
-<!-- JS Libraries -->
-<script src="{{ asset('node_modules/simpleweather/jquery.simpleWeather.min.js') }}"></script>
-<script src="{{ asset('node_modules/chart.js/dist/Chart.min.js') }}"></script>
-<script src="{{ asset('node_modules/jqvmap/dist/jquery.vmap.min.js') }}"></script>
-<script src="{{ asset('node_modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
-<script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
-<script src="{{ asset('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
+  <!-- JS Libraries -->
+  <script src="{{ asset('node_modules/simpleweather/jquery.simpleWeather.min.js') }}"></script>
+  <script src="{{ asset('node_modules/chart.js/dist/Chart.min.js') }}"></script>
+  <script src="{{ asset('node_modules/jqvmap/dist/jquery.vmap.min.js') }}"></script>
+  <script src="{{ asset('node_modules/jqvmap/dist/maps/jquery.vmap.world.js') }}"></script>
+  <script src="{{ asset('node_modules/summernote/dist/summernote-bs4.js') }}"></script>
+  <script src="{{ asset('node_modules/chocolat/dist/js/jquery.chocolat.min.js') }}"></script>
 
-<!-- Template JS File -->
-<script src="{{ asset('assets/js/scripts.js') }}"></script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+  <!-- Template JS File -->
+  <script src="{{ asset('assets/js/scripts.js') }}"></script>
+  <script src="{{ asset('assets/js/custom.js') }}"></script>
 
-<!-- Page Specific JS File -->
-<script src="{{ asset('assets/js/page/index-0.js') }}"></script>
+  <!-- Page Specific JS File -->
+  <script src="{{ asset('assets/js/page/index-0.js') }}"></script>
+
+  <script>
+      $(document).ready(function() {
+          var table = $('#table-1').DataTable({
+              "columnDefs": [
+                  { "orderable": false, "targets": [0, 2, 3] }, // Disable sorting on No, Foto Petani, and Aksi columns
+                  { "orderable": true, "targets": [1] } // Enable sorting only on Nama Petani column
+              ],
+              "order": [], // Default sorting
+              "paging": true,
+              "lengthChange": false,
+              "searching": true,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+          });
+
+          // Adding auto-numbering to the first column
+          table.on('order.dt search.dt', function() {
+              let i = 1;
+              table.column(0, { search: 'applied', order: 'applied' }).nodes().each(function(cell, index) {
+                  cell.innerHTML = i++;
+              });
+          }).draw();
+      });
+  </script>
 
 </body>
 </html>

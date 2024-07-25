@@ -46,11 +46,21 @@ Route::middleware('auth')->group(function () {
 Route::group(['middleware'=>'role:superadmin'],function () {
     // SUPERADMIN
     Route::get('/superadmin/main', [MainController::class, 'main'])->name('superadmin.main');
+    // PETANI
+    Route::get('/superadmin/petani', [PetaniController::class, 'main'])->name('superadmin.petani');
+    Route::get('/superadmin/petani/create', [PetaniController::class, 'create'])->name('superadmin.petani.create');
+    Route::post('/superadmin/petani/store', [PetaniController::class, 'store'])->name('superadmin.petani.store');
+    //edit petani
+    Route::get('/superadmin/petani/edit/{kodeunik_petani}', [PetaniController::class, 'edit'])->name('superadmin.petani.edit');
+    //proses update petani
+    Route::patch('/superadmin/petani/edit/{kodeunik_petani}', [PetaniController::class, 'update'])->name('superadmin.petani.edit.update');
+    //hapus foto petani
+    Route::patch('/superadmin/petani/edit/hapus-foto/{kodeunik_petani}', [PetaniController::class, 'hapusfotopetani'])->name('superadmin.petani.edit.hapus-foto');
+    //upload foto petani
+    Route::patch('/superadmin/petani/edit/upload-foto/{kodeunik_petani}', [PetaniController::class, 'upfotopetani'])->name('superadmin.petani.edit.upload-foto');
+    //proses menghapus petani
+    Route::delete('/superadmin/petani/{kodeunik_petani}', [PetaniController::class, 'delete'])->name('superadmin.petani.delete');
 });
-
-// PETANI
-Route::get('/superadmin/petani', [PetaniController::class, 'main'])->name('superadmin.petani');
-Route::get('/superadmin/petani/create', [PetaniController::class, 'create'])->name('superadmin.petani.create');
 
 // TANAMAN
 Route::get('/superadmin/tanaman', [TanamanController::class, 'main'])->name('superadmin.tanaman');

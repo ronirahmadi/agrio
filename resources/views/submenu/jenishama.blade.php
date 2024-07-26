@@ -263,44 +263,6 @@
 
         <!-- Selesai Jenis Hama -->
 
-
-        <!--Start Footer One -->
-        <footer class="footer-one">
-            <div class="footer-one__bg" style="background-image: url(assets/images/shapes/footer-v1-shape3.png);"></div>
-            <div class="shape1 float-bob-y"><img src="assets/images/shapes/footer-v1-shape1.png" alt="#"></div>
-            <div class="shape2 float-bob-y"><img src="assets/images/shapes/footer-v1-shape2.png" alt="#"></div>
-            <!--Start Footer-->
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <!--Start Footer Widget Single-->
-                        <div class="col-xl-5 col-lg-5  wow animated fadeInUp" data-wow-delay="0.1s">
-                            <div class="footer-widget__single">
-                                <div class="footer-widget__single-about">
-                                    <div class="logo-box">
-                                        <a href="index.html"><img src="assets/images/resources/footer-logo.png"
-                                                alt="#"></a>
-                                    </div>
-
-                                    <form class="footer-widget__subscribe-box">
-                                        <div class="title-box">
-                                            <h5>Subsrcibe for Latest Articles and Resources</h5>
-                                        </div>
-                                        <div class="footer-widget__subscribe-input-box">
-                                            <input type="email" placeholder="Email Address" name="email">
-                                            <button type="submit" class="footer-widget__subscribe-btn">
-                                                <span>Go</span>
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End Footer Widget Single-->
-
-                        <!--Start Footer One Right-->
-                        
-
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
         <div class="search-popup__content">

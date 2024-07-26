@@ -1,5 +1,5 @@
 @extends('submenu.layout.footer')
-@section('submenu.jenistanaman')
+@section('submenu.contact')
 
 
 <!DOCTYPE html>
@@ -139,7 +139,7 @@
                                                     <a href="{{ route('about') }}">About <span class="line"></span></a>
                                                 </li>
 
-                                                <li class="dropdown current">
+                                                <li class="dropdown">
                                                     <a href="#">Pages <span class="line"></span></a>
                                                     <ul>
                                                         <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
@@ -151,7 +151,7 @@
                                                 </li>
 
                                                 <li>
-                                                    <a href="contact.html">Contact <span class="line"></span></a>
+                                                    <a class="current" href="{{ route('contact') }}">Contact <span class="line"></span></a>
                                                 </li>
                                                 <li>
                                                     <div class="main-header-one__bottom-right">
@@ -191,71 +191,22 @@
 
             <div class="container">
                 <div class="page-header__inner">
-                    <h2>Tanaman</h2>
+                    <h2>Contact</h2>
                     <ul class="thm-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li><span>-</span></li>
-                        <li>Tanaman</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <div class="container-fluid">
-            <!-- ISI CARD -->
-            <section class="services-one">
-                <div class="container">
-                    <div class="sec-title text-center">
-                        <div class="sec-title__tagline">
-                            <span class="left"></span>
-                            <h6>Tanaman</h6>
-                            <span class="right"></span>
-                        </div>
-                        <h2 class="sec-title__title">Cari Berdasarkan Tanaman</h2>
-                    </div>
-
-                    <div class="search-container">
-                        <form class="d-flex" action="#">
-                            <label for="search" class="sr-only">search here</label>
-                            <input class="form-control" type="text" id="search" placeholder="Search Here..." />
-                            <button type="submit" aria-label="search submit" class="thm-btn">
-                                <i class="icon-magnifying-glass"></i>
-                            </button>
-                        </form>
-                    </div>
-
-                    <div>
-                        <!--Start Services One Single-->
-                        <div class="row">
-                            <div class="gradient-bg"></div>
-                            <!--Start Services One Single-->
-                            <div  class="col-md-3 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1000ms">
-                                <div class="services-one__single">
-                                    <div class="services-one__single-img">
-                                        <div class="services-one__single-img-bg"
-                                            style="background-image: url(assets/images/shapes/services-v1-shape1.png);"></div>
-                                        <div class="overlay-icon">
-                                            <div class="icon-box">
-                                                <span class="icon-gardening-1"></span>
-                                            </div>
-                                        </div>
-                                        <img src="assets/img/tanaman1.jpg" alt="#">
-                                    </div>
-
-                                    <div class="services-one__single-content text-center">
-                                        <h2><a href="arbor-management.html">Yogyakarta</a></h2>
-                                        <p>Yogyakarta yang berada di ketinggian 113 mdpl</p>
-                                    </div>
-                                </div>
-                            </div>
+        
 
 
-                        <!--End Services One Single-->                            
-                    </div>
-                </div>
-            </section>
-        </div>
+                
                         
+
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
         <div class="search-popup__content">

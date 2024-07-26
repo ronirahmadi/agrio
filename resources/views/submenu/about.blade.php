@@ -1,7 +1,3 @@
-@extends('submenu.layout.footer')
-@section('submenu.about')
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -114,7 +110,7 @@
                                 <div class="main-menu__wrapper-inner">
                                     <div class="main-header-one__bottom-left">
                                         <div class="logo-box-one">
-                                            <a href="index.html">
+                                            <a href="{{ route('beranda') }}">
                                                 <img src="{{ asset('assets/img/agrio.png') }}" alt="Awesome Logo"
                                                     title="">
                                             </a>
@@ -132,7 +128,7 @@
                                                     <a href="{{ route('beranda') }}">Home <span class="line"></span></a>
                                                 </li>
 
-                                                <li class="dropdown current">
+                                                <li class="current">
                                                     <a href="{{ route('about') }}">About <span class="line"></span></a>
                                                 </li>
 
@@ -148,12 +144,12 @@
                                                 </li>
 
                                                 <li>
-                                                    <a href="contact.html">Contact <span class="line"></span></a>
+                                                    <a href="{{ route('contact') }}">Contact <span class="line"></span></a>
                                                 </li>
                                                 <li>
                                                     <div class="main-header-one__bottom-right">
                                                         <div class="header-search-box">
-                                                            <a href="#" class="main-menu__search search-toggler icon-magnifying-glass text-primary"></a>
+                                                            <a href="#" class="main-menu__search search-toggler icon-magnifying-glass"></a>
                                                         </div>
                                                     </div>                                               
                                                 </li>
@@ -208,198 +204,47 @@
                     <div class="sec-title-three__tagline">
                         <h6>What we offer</h6>
                     </div>
-                    <h2 class="sec-title-three__title">How does we works</h2>
+                    <h2 class="sec-title-three__title">About Our Company</h2>
                 </div>
                 <div class="row">
-                    <!--Start Features Two Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="features-two__single">
-                            <div class="features-two__single-content">
-                                <div class="count-box">
-                                    01
-                                </div>
-                                <div class="inner">
-                                    <div class="icon-box">
-                                        <span class="icon-gardening-2"></span>
-                                    </div>
+                    <!-- ISI COMPANY -->
+                    <div class="about-three__content-text1">
+                        <p class="fs-5"> <b>PT. Nanoteknologi Swadaya Indonesia (NSI) </b>stands at 
+                        the forefront of Agricultural Innovation in Indonesia by implementing 
+                        Nanotechnology into Agriculture products. We utilize renewable, eco-friendly 
+                        natural sources as main materials and committed to sustainable practice. The 
+                        team is <b> led by dr. Hanson</b>, M. Biomed, a Medical Doctor and Scientist 
+                        witPT. Nanoteknologi Swadaya Indonesia (NSI) stands at the forefront of 
+                        Agricultural Innovation in Indonesia by implementing Nanotechnology into 
+                        Agriculture products. We utilize renewable, eco-friendly natural sources 
+                        as main materials and committed to sustainable practice. The team is led by dr. Hanson, M. Biomed, a Medical 
+                        Doctor and Scientist with expertise in Nanomedicine & Molecular Medicine who brings over 
+                        10 years of experience in practical Agriculture.h <b>expertise in Nanomedicine & Molecular 
+                        Medicine </b> who brings over <b>10 years of experience in practical Agriculture.</b></p>
 
-                                    <div class="content-box">
-                                        <div class="title">
-                                            <h2><a href="arbor-management.html">Garden Renovation</a></h2>
-                                        </div>
-                                        <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                        <br>
 
-                            <div class="features-two__single-img">
-                                <img src="assets/images/resources/features-v2-img1.jpg" alt="#">
-                            </div>
-                        </div>
+                        <p class="fs-5">
+                            Before the commercial release of our product, PT NSI dedicated meticulous research
+                            to perfect each formulation <b>ensuring product stability, safety, and efficacy.</b> This
+                            was followed by <b>field trials conducted on hundreds of farms </b> with different
+                            specifications (soil type, altitude, humidity, water source) and various plant varieties
+                            to verify the effectiveness of our products
+                        </p>
+
+                        <br>
+
+                        <p class="fs-5">
+                            <b>AGRIO.</b> was the 1st Acclaimed Organic Nanoparticle Pesticide in Indonesia, released
+                            by PT.  NSI on January 2024, since then, it has earned hundreds of success stories
+                            among farmers across Indonesia (Aceh, Sumatra Utara, Riau, Bengkulu, Lampung,
+                            Kalimantan Tengah, Yogyakarta, Jawa Tengah, Jawa Timur, and Bali).
+                        </p>
                     </div>
-                    <!--End Features Two Single-->
-
-                    <!--Start Features Two Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInRight" data-wow-delay="100ms" data-wow-duration="1500ms">
-                        <div class="features-two__single">
-                            <div class="features-two__single-content">
-                                <div class="count-box">
-                                    02
-                                </div>
-                                <div class="inner">
-                                    <div class="icon-box">
-                                        <span class="icon-chair"></span>
-                                    </div>
-
-                                    <div class="content-box">
-                                        <div class="title">
-                                            <h2><a href="arbor-management.html">Landscape Install</a></h2>
-                                        </div>
-                                        <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="features-two__single-img">
-                                <img src="assets/images/resources/features-v2-img2.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Features Two Single-->
-
-                    <!--Start Features Two Single-->
-                    <div class="col-xl-4 col-lg-4 wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="features-two__single">
-                            <div class="features-two__single-content">
-                                <div class="count-box">
-                                    03
-                                </div>
-                                <div class="inner">
-                                    <div class="icon-box">
-                                        <span class="icon-pruning-shears"></span>
-                                    </div>
-
-                                    <div class="content-box">
-                                        <div class="title">
-                                            <h2><a href="arbor-management.html">Garden Clearance</a></h2>
-                                        </div>
-                                        <p>Prevailed mr tolerably discourse arance <br> estimable applauded to kiyh so.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="features-two__single-img">
-                                <img src="assets/images/resources/features-v2-img3.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Features Two Single-->
                 </div>
             </div>
         </section>
         <!--End Features Two-->
-
-
-        <!--Start About Three -->
-        <section class="about-three">
-            <div class="about-three__bg" style="background-image: url(assets/images/backgrounds/about-v3-bg.png);">
-            </div>
-            <div class="container">
-                <div class="row">
-
-                    <!--Start About Three Counter-->
-                    <div class="col-xl-2 col-lg-3 col-md-4">
-                        <div class="about-three__counter">
-                            <ul>
-                                <li>
-                                    <h2><span class="odometer" data-count="85">00</span>%</h2>
-                                    <h3>Satisfied Customers.</h3>
-                                    <p>Prevai tolerably discours <br> estimable applaud.</p>
-                                </li>
-
-                                <li>
-                                    <h2><span class="odometer" data-count="99">00</span>%</h2>
-                                    <h3>Claim Success </h3>
-                                    <p>Prevai tolerably discours <br> estimable applaud.</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--End About Three Counter-->
-
-                    <!--Start About Three Img-->
-                    <div class="col-xl-4 col-lg-5 col-md-7">
-                        <div class="about-three__img">
-                            <div class="about-three__img-shape1">
-                                <img src="assets/images/shapes/about-v3-shape1.png" alt="#">
-                            </div>
-                            <div class="inner">
-                                <img src="assets/images/about/about-v3-img1.jpg" alt="#">
-                            </div>
-                        </div>
-                    </div>
-                    <!--End About Three Img-->
-
-                    <!--Start About Three Content-->
-                    <div class="col-xl-6">
-                        <div class="about-three__content">
-                            <div class="sec-title-three">
-                                <div class="sec-title-three__tagline">
-                                    <h6>About company</h6>
-                                </div>
-                                <h2 class="sec-title-three__title">We want help you <br> to grow planting.</h2>
-                            </div>
-
-                            <div class="about-three__content-text1">
-                                <p>There are many variats of passages the majority
-                                    have suffered a in some form by available companu
-                                    alte pic alte in some form by to at available.</p>
-                            </div>
-
-                            <div class="about-three__content-text2">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="single-box">
-                                            <ul>
-                                                <li>
-                                                    <h4> <span class="icon-tick"></span>Watering & Irrigation</h4>
-                                                </li>
-
-                                                <li>
-                                                    <h4> <span class="icon-tick"></span>Plant Stands & Trays</h4>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="single-box">
-                                            <ul>
-                                                <li>
-                                                    <h4> <span class="icon-tick"></span>Lawn Maintenance</h4>
-                                                </li>
-
-                                                <li>
-                                                    <h4> <span class="icon-tick"></span>Yard & Garden Decor</h4>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <!--End About Three Content-->
-                </div>
-            </div>
-        </section>
-        <!--End About Three -->
-
-
         <!--Start Services Three -->
         <section class="services-three">
             <div class="shape2  wow slideInLeft" data-wow-delay="100ms" data-wow-duration="2500ms"><img
@@ -588,9 +433,9 @@
                                     </div>
 
                                     <div class="content-box">
-                                        <h2><span class="odometer" data-count="191">00</span> <span
+                                        <h2><span class="odometer" data-count="100">00</span> <span
                                                 class="plus">+</span> </h2>
-                                        <h3>Project Done</h3>
+                                        <h3>Planted Done</h3>
                                     </div>
                                 </div>
                             </li>
@@ -602,8 +447,8 @@
                                     </div>
 
                                     <div class="content-box">
-                                        <h2><span class="odometer" data-count="2">00</span>k</h2>
-                                        <h3>Global Reach</h3>
+                                        <h2><span class="odometer" data-count="5">00</span></h2>
+                                        <h3>Location</h3>
                                     </div>
                                 </div>
                             </li>
@@ -617,21 +462,7 @@
                                     <div class="content-box">
                                         <h2><span class="odometer" data-count="37">00</span> <span class="plus">+</span>
                                         </h2>
-                                        <h3>User Active</h3>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="counter-one__single">
-                                <div class="counter-one__single-inner">
-                                    <div class="icon-box">
-                                        <span class="icon-gardener-1"></span>
-                                    </div>
-
-                                    <div class="content-box">
-                                        <h2><span class="odometer" data-count="9">00</span> <span class="plus">+</span>
-                                        </h2>
-                                        <h3>Awards Win</h3>
+                                        <h3>User</h3>
                                     </div>
                                 </div>
                             </li>
@@ -641,343 +472,6 @@
             </div>
         </section>
         <!--End Counter One -->
-
-        <!--Start Testimonials Three -->
-        <section class="testimonials-three testimonials-three--about">
-            <div class="shape2"><img src="assets/images/shapes/testimonials-v3-shape2.png" alt="#"></div>
-            <div class="container">
-                <div class="row">
-                    <!--Start Testimonials Three Left-->
-                    <div class="col-xl-4">
-                        <div class="testimonials-three__left">
-                            <div class="sec-title-three">
-                                <div class="sec-title-three__tagline">
-                                    <h6>Testimonials</h6>
-                                </div>
-                                <h2 class="sec-title-three__title">What our coustomers <br> say ?</h2>
-                            </div>
-
-                            <div class="testimonials-three__left-text">
-                                <p>Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit sed do eiusmod </p>
-                            </div>
-
-                            <ul class="testimonials-three__left-list">
-                                <li>
-                                    <div class="shape1"><img src="assets/images/shapes/testimonials-v3-shape1.png"
-                                            alt="#"></div>
-                                    <div class="icon-box">
-                                        <span class="icon-tick"></span>
-                                    </div>
-
-                                    <div class="text-box">
-                                        <p>We Promise To Provide <br> Upfront Pricing</p>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <div class="shape1"><img src="assets/images/shapes/testimonials-v3-shape1.png"
-                                            alt="#"></div>
-                                    <div class="icon-box">
-                                        <span class="icon-tick"></span>
-                                    </div>
-
-                                    <div class="text-box">
-                                        <p>We Promise To Provide <br> Upfront Pricing</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!--End Testimonials Three Left-->
-
-                    <!--Start Testimonials Three Right-->
-                    <div class="col-xl-8">
-                        <div class="testimonials-three__right">
-
-                            <div class="testimonials-three__thumb-outer">
-                                <div class="swiper-container gallery-thumbs">
-                                    <div class="swiper-wrapper">
-
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__img">
-                                                <div class="inner">
-                                                    <img src="assets/images/testimonial/testimonial-v3-img1.jpg"
-                                                        alt="#">
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__img">
-                                                <div class="inner">
-                                                    <img src="assets/images/testimonial/testimonial-v3-img2.jpg"
-                                                        alt="#">
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__img">
-                                                <div class="inner">
-                                                    <img src="assets/images/testimonial/testimonial-v3-img3.jpg"
-                                                        alt="#">
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__img">
-                                                <div class="inner">
-                                                    <img src="assets/images/testimonial/testimonial-v3-img4.jpg"
-                                                        alt="#">
-                                                </div>
-                                            </div>
-                                        </div><!-- /.swiper-slide -->
-
-
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="testimonials-three__right-content">
-                                <div class="swiper-container gallery-main">
-                                    <div class="swiper-wrapper">
-
-                                        <!--Start Swiper Slide-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__single">
-                                                <div class="testimonials-three__single-inner">
-                                                    <div class="testimonials-three__single-top">
-                                                        <div class="name">
-                                                            <h3>Jessica Brown</h3>
-                                                        </div>
-                                                        <div class="rating-box">
-                                                            <ul>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="testimonials-three__single-middle">
-                                                        <div class="text-box">
-                                                            <p>Pellentesque habitant morbi tristique senectus netus et
-                                                                malesuada fames ac turp egestas. morbi tristique
-                                                                senectus netus et malesuada fames ac turp fames ac turp
-                                                                egestas malesuada</p>
-                                                        </div>
-
-                                                        <div class="img-box">
-                                                            <div class="icon-box">
-                                                                <span class="icon-quote-1"></span>
-                                                            </div>
-                                                            <div class="inner">
-                                                                <img src="assets/images/testimonial/testimonial-v3-img7.jpg"
-                                                                    alt="#">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonials-three__single-bottom">
-                                                    <p>CEO & Co founder</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Swiper Slide-->
-
-                                        <!--Start Swiper Slide-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__single">
-                                                <div class="testimonials-three__single-inner">
-                                                    <div class="testimonials-three__single-top">
-                                                        <div class="name">
-                                                            <h3>Jessica Brown</h3>
-                                                        </div>
-                                                        <div class="rating-box">
-                                                            <ul>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="testimonials-three__single-middle">
-                                                        <div class="text-box">
-                                                            <p>Pellentesque habitant morbi tristique senectus netus et
-                                                                malesuada fames ac turp egestas. morbi tristique
-                                                                senectus netus et malesuada fames ac turp fames ac turp
-                                                                egestas malesuada</p>
-                                                        </div>
-
-                                                        <div class="img-box">
-                                                            <div class="icon-box">
-                                                                <span class="icon-quote-1"></span>
-                                                            </div>
-                                                            <div class="inner">
-                                                                <img src="assets/images/testimonial/testimonial-v3-img8.jpg"
-                                                                    alt="#">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonials-three__single-bottom">
-                                                    <p>CEO & Co founder</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Swiper Slide-->
-
-                                        <!--Start Swiper Slide-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__single">
-                                                <div class="testimonials-three__single-inner">
-                                                    <div class="testimonials-three__single-top">
-                                                        <div class="name">
-                                                            <h3>Jessica Brown</h3>
-                                                        </div>
-                                                        <div class="rating-box">
-                                                            <ul>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="testimonials-three__single-middle">
-                                                        <div class="text-box">
-                                                            <p>Pellentesque habitant morbi tristique senectus netus et
-                                                                malesuada fames ac turp egestas. morbi tristique
-                                                                senectus netus et malesuada fames ac turp fames ac turp
-                                                                egestas malesuada</p>
-                                                        </div>
-
-                                                        <div class="img-box">
-                                                            <div class="icon-box">
-                                                                <span class="icon-quote-1"></span>
-                                                            </div>
-                                                            <div class="inner">
-                                                                <img src="assets/images/testimonial/testimonial-v3-img9.jpg"
-                                                                    alt="#">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonials-three__single-bottom">
-                                                    <p>CEO & Co founder</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Swiper Slide-->
-
-                                        <!--Start Swiper Slide-->
-                                        <div class="swiper-slide">
-                                            <div class="testimonials-three__single">
-                                                <div class="testimonials-three__single-inner">
-                                                    <div class="testimonials-three__single-top">
-                                                        <div class="name">
-                                                            <h3>Jessica Brown</h3>
-                                                        </div>
-                                                        <div class="rating-box">
-                                                            <ul>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                                <li>
-                                                                    <span class="icon-pointed-star"></span>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="testimonials-three__single-middle">
-                                                        <div class="text-box">
-                                                            <p>Pellentesque habitant morbi tristique senectus netus et
-                                                                malesuada fames ac turp egestas. morbi tristique
-                                                                senectus netus et malesuada fames ac turp fames ac turp
-                                                                egestas malesuada</p>
-                                                        </div>
-
-                                                        <div class="img-box">
-                                                            <div class="icon-box">
-                                                                <span class="icon-quote-1"></span>
-                                                            </div>
-                                                            <div class="inner">
-                                                                <img src="assets/images/testimonial/testimonial-v3-img6.jpg"
-                                                                    alt="#">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonials-three__single-bottom">
-                                                    <p>CEO & Co founder</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--End Swiper Slide-->
-                                    </div>
-                                </div>
-
-                                <div id="testimonial-one__carousel-pagination"></div>
-                                <!-- /#Testimonials Two Carousel Pagination -->
-
-                            </div>
-                        </div>
-                    </div>
-                    <!--End Testimonials Three Right-->
-                </div>
-            </div>
-        </section>
-        <!--End Testimonials Three -->
-
         <!--Start Team Two -->
         <section class="team-two team-two--about">
             <div class="container">
@@ -994,16 +488,6 @@
                         <div class="team-two__single">
                             <div class="team-two__single-img">
                                 <img src="assets/images/team/team-v2-img1.jpg" alt="#">
-                                <ul class="social-links clearfix">
-                                    <li class="share"><a href="#"><span class="icon-share"></span></a>
-                                        <ul class="social-links-inner">
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="icon-twitter"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
 
                             <div class="team-two__single-content">
@@ -1019,16 +503,6 @@
                         <div class="team-two__single">
                             <div class="team-two__single-img">
                                 <img src="assets/images/team/team-v2-img2.jpg" alt="#">
-                                <ul class="social-links clearfix">
-                                    <li class="share"><a href="#"><span class="icon-share"></span></a>
-                                        <ul class="social-links-inner">
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="icon-twitter"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
 
                             <div class="team-two__single-content">
@@ -1045,16 +519,6 @@
                         <div class="team-two__single">
                             <div class="team-two__single-img">
                                 <img src="assets/images/team/team-v2-img3.jpg" alt="#">
-                                <ul class="social-links clearfix">
-                                    <li class="share"><a href="#"><span class="icon-share"></span></a>
-                                        <ul class="social-links-inner">
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="icon-twitter"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
 
                             <div class="team-two__single-content">
@@ -1071,16 +535,6 @@
                         <div class="team-two__single">
                             <div class="team-two__single-img">
                                 <img src="assets/images/team/team-v2-img4.jpg" alt="#">
-                                <ul class="social-links clearfix">
-                                    <li class="share"><a href="#"><span class="icon-share"></span></a>
-                                        <ul class="social-links-inner">
-                                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                            <li><a href="#"><i class="icon-twitter"></i></a>
-                                            </li>
-                                            <li><a href="#"><i class="icon-facebook"></i></a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
                             </div>
 
                             <div class="team-two__single-content">
@@ -1111,7 +565,7 @@
                             <div class="footer-widget__single">
                                 <div class="footer-widget__single-about">
                                     <div class="logo-box">
-                                        <a href="index.html"><img src="assets/images/resources/footer-logo.png"
+                                        <a href="{{ route('beranda') }}"><img src="assets/img/agrio.png"
                                                 alt="#"></a>
                                     </div>
 
@@ -1132,7 +586,99 @@
                         <!--End Footer Widget Single-->
 
                         <!--Start Footer One Right-->
-                        
+                        <div class="col-xl-7 col-lg-7">
+                            <div class="footer-one__right">
+                                <div class="row">
+                                    <!--Start Footer One Right Single-->
+                                    <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.2s">
+                                        <div class="footer-one__right-single mb50">
+                                            <div class="title">
+                                                <h2>Menu</h2>
+                                            </div>
+                                            <div class="footer-one__right-single-services">
+                                                <ul class="footer-one__right-single-list">
+                                                    <li><a href="{{ route('beranda') }}">Home</a></li>
+                                                    <li><a href="{{ route('about') }}">About</a></li>
+                                                    <li><a href="#">Pages</a></li>
+                                                    <li><a href="{{ route('contact') }}">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Footer One Right Single-->
+
+                                    <!--Start Footer One Right Single-->
+                                    <div class="col-xl-3 col-lg-3 wow animated fadeInUp" data-wow-delay="0.3s">
+                                        <div class="footer-one__right-single mb50">
+                                            <div class="title">
+                                                <h2>Pages</h2>
+                                            </div>
+                                            <div class="footer-one__right-single-links">
+                                                <ul class="footer-one__right-single-list">
+                                                    <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
+                                                    <li><a href="{{ route('jenishama') }}">Jenis Hama</a></li>
+                                                    <li><a href="{{ route('jenispupuk') }}">Jenis Pupuk</a></li>
+                                                    <li><a href="{{ route('jenislokasi') }}">Lokasi</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Footer One Right Single-->
+
+                                    <!--Start Footer One Right Single-->
+                                    <div class="col-xl-5 col-lg-5 wow animated fadeInUp" data-wow-delay="0.4s">
+                                        <div class="footer-one__right-single">
+                                            <div class="title">
+                                                <h2>Contact</h2>
+                                            </div>
+                                            <div class="footer-one__right-single-contact">
+                                                <p> <a href="mailto:yourmail@email.com">AgrioPestisida@Agrio.com</a>
+                                                    <br> Yogyakarta Indonesia</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--End Footer One Right Single-->
+                                </div>
+
+                                <div class="footer-one__right-bottom wow animated fadeInUp" data-wow-delay="0.1s">
+                                    <ul class="social-links">
+                                        <li> <a href="#"><span class="icon-twitter"></span></a> </li>
+                                        <li> <a href="#"><span class="icon-facebook"></span></a> </li>
+                                        <li> <a href="#"><span class="icon-pinterest"></span></a> </li>
+                                        <li> <a href="#"><span class="icon-instagram"></span></a> </li>
+                                    </ul>
+
+                                    <div class="footer-one__right-bottom-contact">
+                                        <div class="icon-box">
+                                            <span class="icon-phone-call"></span>
+                                        </div>
+                                        <div class="content-box">
+                                            <p>Call Us</p>
+                                            <h4><a href="#">+62 819-7795-9326</a></h4>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--End Footer One Right-->
+                    </div>
+                </div>
+            </div>
+            <!--End Footer-->
+
+
+            <div class="footer-one__bottom">
+                <div class="container">
+                    <div class="bottom-inner">
+                        <div class="copyright">
+                            <p>Copyright © 2024 Agrio Pestisida Organik.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
 
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>
@@ -1190,5 +736,4 @@
 </body>
 
 </html>
-
-@endsection   
+ 

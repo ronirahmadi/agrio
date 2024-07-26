@@ -358,90 +358,6 @@
         </section>
         <!--End About One -->
 
-        <!--Start Contact One-->
-        <section class="contact-one">
-            <div class="contact-one__img wow slideInRight" data-wow-delay="500ms" data-wow-duration="2500ms">
-                <img class="float-bob-y" src="assets/images/resources/content-v1-img1.png" alt="#">
-            </div>
-            <div class="shape1"><img src="assets/images/shapes/contact-v1-shape1.png" alt="#"></div>
-            <div class="shape2"><img src="assets/images/shapes/contact-v1-shape2.png" alt="#"></div>
-            <div class="container">
-                <div class="row">
-                    <!--Start Contact One Form-->
-                    <div class="col-xl-8">
-                        <div class="contact-one__form">
-                            <div class="sec-title">
-                                <div class="sec-title__tagline">
-                                    <h6>Contact Us</h6>
-                                    <span class="right"></span>
-                                </div>
-                                <h2 class="sec-title__title">You Can Easily Book Our <br> Appointment</h2>
-                            </div>
-
-
-                            <form id="contact-form" name="contact_form" class="default-form2"
-                                action="assets/inc/sendmail.php" method="post">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="input-box">
-                                            <input type="text" name="form_name" value="" placeholder="Your Name"
-                                                required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="input-box">
-                                            <input type="email" name="form_email" value="" placeholder="Email Address"
-                                                required="">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="input-box">
-                                            <input type="text" name="form_subject" value="" placeholder="Select Date"
-                                                id="datepicker">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="input-box">
-                                            <input type="text" name="time" placeholder="Select time">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="input-box">
-                                            <div class="select-box">
-                                                <select class="selectmenu wide">
-                                                    <option selected="selected">Select Categories</option>
-                                                    <option>Categories 01</option>
-                                                    <option>Categories 02</option>
-                                                    <option>Categories 03</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="contact-one__form-btn">
-                                            <button class="thm-btn" type="submit" data-loading-text="Please wait...">
-                                                <span class="txt">Book Now</span>
-                                                <i class="icon-double-chevron"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!--End Contact One Form-->
-                </div>
-            </div>
-        </section>
-        <!--End Contact One-->
 
         <!--Start Services One -->
         <section class="services-one">
@@ -809,7 +725,7 @@
                             <div class="footer-widget__single">
                                 <div class="footer-widget__single-about">
                                     <div class="logo-box">
-                                        <a href="index.html"><img src="assets/images/resources/footer-logo.png"
+                                        <a href="{{ route('beranda') }}"><img src="assets/img/agrio.png"
                                                 alt="#"></a>
                                     </div>
 
@@ -837,15 +753,14 @@
                                     <div class="col-xl-4 col-lg-4 wow animated fadeInUp" data-wow-delay="0.2s">
                                         <div class="footer-one__right-single mb50">
                                             <div class="title">
-                                                <h2>Plantation</h2>
+                                                <h2>Menu</h2>
                                             </div>
                                             <div class="footer-one__right-single-services">
                                                 <ul class="footer-one__right-single-list">
-                                                    <li><a href="services.html">Lawn Moving</a></li>
-                                                    <li><a href="services.html">Hedge Cutting</a></li>
-                                                    <li><a href="services.html">Flower Planting</a></li>
-                                                    <li><a href="services.html">Working Process</a></li>
-                                                    <li><a href="services.html">Garden Restoration</a></li>
+                                                    <li><a href="{{ route('beranda') }}">Home</a></li>
+                                                    <li><a href="{{ route('about') }}">About</a></li>
+                                                    <li><a href="#">Pages</a></li>
+                                                    <li><a href="{{ route('contact') }}">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -856,15 +771,14 @@
                                     <div class="col-xl-3 col-lg-3 wow animated fadeInUp" data-wow-delay="0.3s">
                                         <div class="footer-one__right-single mb50">
                                             <div class="title">
-                                                <h2>Links</h2>
+                                                <h2>Pages</h2>
                                             </div>
                                             <div class="footer-one__right-single-links">
                                                 <ul class="footer-one__right-single-list">
-                                                    <li><a href="about.html">About Us</a></li>
-                                                    <li><a href="team.html">Our Team</a></li>
-                                                    <li><a href="contact.html">Contact Us</a></li>
-                                                    <li><a href="#">Our History</a></li>
-                                                    <li><a href="#">Testimonials</a></li>
+                                                    <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
+                                                    <li><a href="{{ route('jenishama') }}">Jenis Hama</a></li>
+                                                    <li><a href="{{ route('jenispupuk') }}">Jenis Pupuk</a></li>
+                                                    <li><a href="{{ route('jenislokasi') }}">Lokasi</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -878,10 +792,8 @@
                                                 <h2>Contact</h2>
                                             </div>
                                             <div class="footer-one__right-single-contact">
-                                                <p> <a href="mailto:yourmail@email.com">needhelp@company.com</a>
-                                                    <br> 80 Broklyn Road Street <br>
-                                                    New York. USA</p>
-                                                <a href=" mailto:yourmail@email.com">info@example.com</a>
+                                                <p> <a href="mailto:yourmail@email.com">AgrioPestisida@Agrio.com</a>
+                                                    <br> Yogyakarta Indonesia</p>
                                             </div>
                                         </div>
                                     </div>
@@ -901,8 +813,8 @@
                                             <span class="icon-phone-call"></span>
                                         </div>
                                         <div class="content-box">
-                                            <p>Call Anytime</p>
-                                            <h4><a href="tel:9288006780">+92 ( 8800 ) - 6780</a></h4>
+                                            <p>Call Us</p>
+                                            <h4><a href="#">+62 819-7795-9326</a></h4>
                                         </div>
                                     </div>
 
@@ -922,12 +834,6 @@
                         <div class="copyright">
                             <p>Copyright © 2024 Agrio Pestisida Organik.</p>
                         </div>
-
-                        <ul class="footer-one__bottom-menu">
-                            <li><a href="about.html">Terms & Condition</a></li>
-                            <li><a href="about.html">Privacy </a></li>
-                            <li><a href="about.html">Support</a></li>
-                        </ul>
                     </div>
                 </div>
             </div>

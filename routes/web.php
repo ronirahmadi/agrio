@@ -13,6 +13,8 @@ use App\Http\Controllers\SubMenu\JenisHamaController;
 use App\Http\Controllers\SubMenu\JenisPupukController;
 use App\Http\Controllers\SubMenu\JenisLokasiController;
 use App\Http\Controllers\SubMenu\JenisTanamanController;
+use App\Http\Controllers\SubMenu\ContactController;
+
 
 
 use Illuminate\Support\Facades\Route;
@@ -95,5 +97,8 @@ Route::get('/Jenislokasi', [JenisLokasiController::class, 'jenisLokasi'])->name(
 
 // JENIS TANAMAN
 Route::get('/Jenistanaman', [JenisTanamanController::class, 'jenisTanaman'])->name('jenistanaman');
+
+// CONTACT
+Route::get('/contact', [ContactController::class, 'contact'])->name('contact');
 
 require __DIR__.'/auth.php';

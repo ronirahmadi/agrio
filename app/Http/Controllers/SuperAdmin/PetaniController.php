@@ -28,7 +28,7 @@ class PetaniController extends Controller
     public function main()
     {
         $petani = Petani::orderBy('tbl_petani.nama_petani', 'Asc')
-        ->paginate(10);        
+        ->get();        
 
         return view('superadmin.petani.list', compact('petani'));
     }

@@ -48,8 +48,10 @@ Route::middleware('auth')->group(function () {
 Route::group(['middleware'=>'role:superadmin'],function () {
     // SUPERADMIN
     Route::get('/superadmin/main', [MainController::class, 'main'])->name('superadmin.main');
+    
     // PETANI
     Route::get('/superadmin/petani', [PetaniController::class, 'main'])->name('superadmin.petani');
+    // create petani
     Route::get('/superadmin/petani/create', [PetaniController::class, 'create'])->name('superadmin.petani.create');
     Route::post('/superadmin/petani/store', [PetaniController::class, 'store'])->name('superadmin.petani.store');
     //edit petani
@@ -62,6 +64,20 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::patch('/superadmin/petani/edit/upload-foto/{kodeunik_petani}', [PetaniController::class, 'upfotopetani'])->name('superadmin.petani.edit.upload-foto');
     //proses menghapus petani
     Route::delete('/superadmin/petani/{kodeunik_petani}', [PetaniController::class, 'delete'])->name('superadmin.petani.delete');
+
+    // HAMA
+    Route::get('/superadmin/hama', [HamaController::class, 'main'])->name('superadmin.hama');
+    Route::get('/superadmin/hama/create', [HamaController::class, 'create'])->name('superadmin.hama.create');
+    // create hama
+    Route::get('/superadmin/hama/create', [HamaController::class, 'create'])->name('superadmin.hama.create');
+    Route::post('/superadmin/hama/store', [HamaController::class, 'store'])->name('superadmin.hama.store');
+    //edit hama
+    Route::get('/superadmin/hama/edit/{kodeunik_hama}', [HamaController::class, 'edit'])->name('superadmin.hama.edit');
+    //proses update hama
+    Route::patch('/superadmin/hama/edit/{kodeunik_hama}', [HamaController::class, 'update'])->name('superadmin.hama.edit.update');
+    //proses menghapus hama
+    Route::delete('/superadmin/hama/{kodeunik_hama}', [HamaController::class, 'delete'])->name('superadmin.hama.delete');
+    
 });
 
 // TANAMAN

@@ -277,7 +277,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="../assets/js/stisla.js"></script>
-  
+
   <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
   
   <!-- JS Libraries -->
@@ -297,11 +297,21 @@
   
   <script>
       $(document).ready(function() {
-          var table = $('#table-1').DataTable({
+          var table = $('#table-petani').DataTable({
               "columnDefs": [
                   { "orderable": false, "targets": [0, 2, 3] }, // Disable sorting on No, Foto Petani, and Aksi columns
                   { "orderable": true, "targets": [1] } // Enable sorting only on Nama Petani column
               ],
+              "order": [], // Default sorting
+              "paging": true,
+              "lengthChange": false,
+              "searching": true,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+          });
+
+          var table = $('#table-hama').DataTable({
               "order": [], // Default sorting
               "paging": true,
               "lengthChange": false,

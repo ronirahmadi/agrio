@@ -312,7 +312,27 @@
               "autoWidth": false,
           });
 
+          var table = $('#table-tanaman').DataTable({
+              "order": [], // Default sorting
+              "paging": true,
+              "lengthChange": false,
+              "searching": true,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+          });
+
           var table = $('#table-hama').DataTable({
+              "order": [], // Default sorting
+              "paging": true,
+              "lengthChange": false,
+              "searching": true,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+          });
+
+          var table = $('#table-pupuk').DataTable({
               "order": [], // Default sorting
               "paging": true,
               "lengthChange": false,

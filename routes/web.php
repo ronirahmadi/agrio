@@ -78,7 +78,7 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     //proses menghapus hama
     Route::delete('/superadmin/hama/{kodeunik_hama}', [HamaController::class, 'delete'])->name('superadmin.hama.delete');
 
-    // tanaman
+    //Tanaman
     Route::get('/superadmin/tanaman', [TanamanController::class, 'main'])->name('superadmin.tanaman');
     // create tanaman
     Route::get('/superadmin/tanaman/create', [TanamanController::class, 'create'])->name('superadmin.tanaman.create');
@@ -93,6 +93,22 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::patch('/superadmin/tanaman/edit/upload-foto/{kodeunik_tanaman}', [TanamanController::class, 'upfototanaman'])->name('superadmin.tanaman.edit.upload-foto');
     //proses menghapus tanaman
     Route::delete('/superadmin/tanaman/{kodeunik_tanaman}', [TanamanController::class, 'delete'])->name('superadmin.tanaman.delete');
+
+    //Pupuk
+    Route::get('/superadmin/pupuk', [PupukController::class, 'main'])->name('superadmin.pupuk');
+    // create pupuk
+    Route::get('/superadmin/pupuk/create', [PupukController::class, 'create'])->name('superadmin.pupuk.create');
+    Route::post('/superadmin/pupuk/store', [PupukController::class, 'store'])->name('superadmin.pupuk.store');
+    //edit pupuk
+    Route::get('/superadmin/pupuk/edit/{kodeunik_pupuk}', [PupukController::class, 'edit'])->name('superadmin.pupuk.edit');
+    //proses update pupuk
+    Route::patch('/superadmin/pupuk/edit/{kodeunik_pupuk}', [PupukController::class, 'update'])->name('superadmin.pupuk.edit.update');
+    //hapus foto pupuk
+    Route::patch('/superadmin/pupuk/edit/hapus-foto/{kodeunik_pupuk}', [PupukController::class, 'hapusfotopupuk'])->name('superadmin.pupuk.edit.hapus-foto');
+    //upload foto pupuk
+    Route::patch('/superadmin/pupuk/edit/upload-foto/{kodeunik_pupuk}', [PupukController::class, 'upfotopupuk'])->name('superadmin.pupuk.edit.upload-foto');
+    //proses menghapus pupuk
+    Route::delete('/superadmin/pupuk/{kodeunik_pupuk}', [PupukController::class, 'delete'])->name('superadmin.pupuk.delete');
     
 });
 

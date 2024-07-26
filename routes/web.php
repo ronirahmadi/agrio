@@ -77,6 +77,22 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::patch('/superadmin/hama/edit/{kodeunik_hama}', [HamaController::class, 'update'])->name('superadmin.hama.edit.update');
     //proses menghapus hama
     Route::delete('/superadmin/hama/{kodeunik_hama}', [HamaController::class, 'delete'])->name('superadmin.hama.delete');
+
+    // tanaman
+    Route::get('/superadmin/tanaman', [TanamanController::class, 'main'])->name('superadmin.tanaman');
+    // create tanaman
+    Route::get('/superadmin/tanaman/create', [TanamanController::class, 'create'])->name('superadmin.tanaman.create');
+    Route::post('/superadmin/tanaman/store', [TanamanController::class, 'store'])->name('superadmin.tanaman.store');
+    //edit tanaman
+    Route::get('/superadmin/tanaman/edit/{kodeunik_tanaman}', [TanamanController::class, 'edit'])->name('superadmin.tanaman.edit');
+    //proses update tanaman
+    Route::patch('/superadmin/tanaman/edit/{kodeunik_tanaman}', [TanamanController::class, 'update'])->name('superadmin.tanaman.edit.update');
+    //hapus foto tanaman
+    Route::patch('/superadmin/tanaman/edit/hapus-foto/{kodeunik_tanaman}', [TanamanController::class, 'hapusfototanaman'])->name('superadmin.tanaman.edit.hapus-foto');
+    //upload foto tanaman
+    Route::patch('/superadmin/tanaman/edit/upload-foto/{kodeunik_tanaman}', [TanamanController::class, 'upfototanaman'])->name('superadmin.tanaman.edit.upload-foto');
+    //proses menghapus tanaman
+    Route::delete('/superadmin/tanaman/{kodeunik_tanaman}', [TanamanController::class, 'delete'])->name('superadmin.tanaman.delete');
     
 });
 

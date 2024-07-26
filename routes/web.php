@@ -5,13 +5,13 @@ use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\SuperAdmin\MainController;
 use App\Http\Controllers\SuperAdmin\PetaniController;
 use App\Http\Controllers\SuperAdmin\TanamanController;
-use App\Http\Controllers\SuperAdmin\LokasiController;
+use App\Http\Controllers\SuperAdmin\LahanController;
 use App\Http\Controllers\SuperAdmin\HamaController;
 use App\Http\Controllers\SuperAdmin\PupukController;
 use App\Http\Controllers\SubMenu\AboutController;
 use App\Http\Controllers\SubMenu\JenisHamaController;
 use App\Http\Controllers\SubMenu\JenisPupukController;
-use App\Http\Controllers\SubMenu\JenisLokasiController;
+use App\Http\Controllers\SubMenu\JenisLahanController;
 use App\Http\Controllers\SubMenu\JenisTanamanController;
 use App\Http\Controllers\SubMenu\ContactController;
 
@@ -68,9 +68,9 @@ Route::group(['middleware'=>'role:superadmin'],function () {
 Route::get('/superadmin/tanaman', [TanamanController::class, 'main'])->name('superadmin.tanaman');
 Route::get('/superadmin/tanaman/create', [TanamanController::class, 'create'])->name('superadmin.tanaman.create');
 
-// LOKASI
-Route::get('/superadmin/lokasi', [LokasiController::class, 'main'])->name('superadmin.lokasi');
-Route::get('/superadmin/lokasi/create', [LokasiController::class, 'create'])->name('superadmin.lokasi.create');
+// LAHAN
+Route::get('/superadmin/lahan', [LahanController::class, 'main'])->name('superadmin.lahan');
+Route::get('/superadmin/lahan/create', [LahanController::class, 'create'])->name('superadmin.lahan.create');
 
 // HAMA
 Route::get('/superadmin/hama', [HamaController::class, 'main'])->name('superadmin.hama');
@@ -93,7 +93,7 @@ Route::get('/Jenishama', [JenisHamaController::class, 'jenisHama'])->name('jenis
 Route::get('/Jenispupuk', [JenisPupukController::class, 'jenisPupuk'])->name('jenispupuk');
 
 // JENIS LOKASI
-Route::get('/Jenislokasi', [JenisLokasiController::class, 'jenisLokasi'])->name('jenislokasi');
+Route::get('/Jenislahan', [JenisLahanController::class, 'jenisLahan'])->name('jenislahan');
 
 // JENIS TANAMAN
 Route::get('/Jenistanaman', [JenisTanamanController::class, 'jenisTanaman'])->name('jenistanaman');

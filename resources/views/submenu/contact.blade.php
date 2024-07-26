@@ -145,7 +145,7 @@
                                                         <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
                                                         <li><a href="{{ route('jenishama') }}">Jenis Hama</a></li>
                                                         <li><a href="{{ route('jenispupuk') }}">Jenis Pupuk</a></li>
-                                                        <li><a href="{{ route('jenislokasi') }}">Lokasi</a>
+                                                        <li><a href="{{ route('jenislahan') }}">Lahan</a>
                                                         </li>
                                                     </ul>
                                                 </li>

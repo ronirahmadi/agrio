@@ -5,14 +5,14 @@ namespace App\Http\Controllers\SuperAdmin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class LokasiController extends Controller
+class LahanController extends Controller
 {
     public function main()
     {
-        return view('superadmin.lokasi.list');
+        return view('superadmin.lahan.list');
     }
     public function create()
     {
-        return view('superadmin.lokasi.create');
+        return view('superadmin.lahan.create');
     }
 }

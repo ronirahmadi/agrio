@@ -145,13 +145,13 @@
                                                         <li><a href="{{ route('jenistanaman') }}">Jenis Tanaman</a></li>
                                                         <li><a href="{{ route('jenishama') }}">Jenis Hama</a></li>
                                                         <li><a href="{{ route('jenispupuk') }}">Jenis Pupuk</a></li>
-                                                        <li><a href="{{ route('jenislokasi') }}">Lokasi</a>
+                                                        <li><a href="{{ route('jenislahan') }}">Lahan</a>
                                                         </li>
                                                     </ul>
                                                 </li>
 
                                                 <li>
-                                                    <a href="contact.html">Contact <span class="line"></span></a>
+                                                    <a href="{{ route('contact') }}">Contact <span class="line"></span></a>
                                                 </li>
                                                 <li>
                                                     <div class="main-header-one__bottom-right">
@@ -191,11 +191,11 @@
 
             <div class="container">
                 <div class="page-header__inner">
-                    <h2>Lokasi</h2>
+                    <h2>Lahan</h2>
                     <ul class="thm-breadcrumb">
                         <li><a href="index.html">Home</a></li>
                         <li><span>-</span></li>
-                        <li>Lokasi</li>
+                        <li>Lahan</li>
                     </ul>
                 </div>
             </div>
@@ -208,10 +208,10 @@
                     <div class="sec-title text-center">
                         <div class="sec-title__tagline">
                             <span class="left"></span>
-                            <h6>Lokasi</h6>
+                            <h6>Lahan</h6>
                             <span class="right"></span>
                         </div>
-                        <h2 class="sec-title__title">Cari Berdasarkan Lokasi</h2>
+                        <h2 class="sec-title__title">Cari Berdasarkan Lahan</h2>
                     </div>
 
                     <div class="search-container">

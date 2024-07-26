@@ -5,10 +5,10 @@ namespace App\Http\Controllers\SubMenu;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class JenisLokasiController extends Controller
+class JenisLahanController extends Controller
 {
-    public function jenisLokasi()
+    public function jenisLahan()
     {
-        return view('submenu.jenisLokasi');
+        return view('submenu.jenislahan');
     }
 }

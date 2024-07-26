@@ -40,6 +40,6 @@ class Pupuk extends Model
      */
     public function ladang()
     {
-        return $this->hasMany(Ladang::class, 'kode_pupuk');
+        return $this->hasMany(Lahan::class, 'kode_pupuk');
     }
 }

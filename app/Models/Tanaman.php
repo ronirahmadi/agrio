@@ -40,6 +40,6 @@ class Tanaman extends Model
      */
     public function ladang()
     {
-        return $this->hasMany(Ladang::class, 'kode_tanaman');
+        return $this->hasMany(Lahan::class, 'kode_tanaman');
     }
 }

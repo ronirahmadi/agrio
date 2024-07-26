@@ -2,95 +2,136 @@
 
 @section('superadmin.layouts.main')
 <!-- Main Content -->
-    <section class="section">
+<section class="section">
         <div class="section-header">
-            <h1>Lokasi</h1>
+        <h1>Form Laporan</h1>
+        <div class="section-header-breadcrumb">
+            <div class="breadcrumb-item"><a href="#">Menu</a></div>
+            <div class="breadcrumb-item"><a href="#">Form Laporan</a></div>
+        </div>
         </div>
 
-        <!-- ISI -->
         <div class="section-body">
-            <div>
-                <div class="card">
-                    <div class="card-header">
-                        <h4>Tambah Lokasi</h4>
-                        <div class="card-header-form">
-                            <form>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="Search">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+            <h2 class="section-title">Form Laporan Patroli Harian</h2>
+            <p class="section-lead">
+                Lengkapi data berikut, untuk melakukan laporan patroli harian
+            </p>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                            <div class="card-body">
+                                <form action="{{ route('superadmin.lahan.store') }}" method="POST" enctype="multipart/form-data">
+                                @csrf
+                                @if (count($errors) > 0)
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                                @endif
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Pilih Petani :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="petani" required>
+                                            <option selected="true" disabled="disabled">--Pilih Petani--</option>
+                                            @foreach ($petani as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
                                     </div>
                                 </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Pilih Tanaman :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="tanaman" required>
+                                            <option selected="true" disabled="disabled">--Pilih Tanaman--</option>
+                                            @foreach ($tanaman as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Pilih Hama :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="hama" required>
+                                            <option selected="true" disabled="disabled">--Pilih Hama--</option>
+                                            @foreach ($hama as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Pilih Pupuk :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="pupuk" required>
+                                            <option selected="true" disabled="disabled">--Pilih Pupuk--</option>
+                                            @foreach ($pupuk as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Luas Lahan :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="number" class="form-control" id="luaslahan" name="luaslahan" placeholder="M2" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Lokasi :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="text" class="form-control" id="lokasi" name="lokasi" placeholder="Alamat jalan" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Provinsi :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select class="form-control selectric" name="provinsi" required>
+                                            <option selected="true" disabled="disabled">--Pilih Provinsi--</option>
+                                            @foreach ($provinsi as $key => $value)
+                                            <option value="{{ $key }}">{{ $value }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kota :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select name="kota" class="form-control" required>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kecamatan :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select name="kecamatan" class="form-control" required>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Desa :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <select name="desa" class="form-control" required>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row mb-4">
+                                    <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Ketinggian Lahan :</label>
+                                    <div class="col-sm-12 col-md-7">
+                                        <input type="number" class="form-control" id="ketinggian" name="ketinggian" placeholder="MDPL" required>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                                    <button id="submit" type="submit" class="btn btn-success">Upload Data</button>
+                                </div>
+                            </div>
                             </form>
                         </div>
-                    </div>
-                    <div class="card-body p-0">
-                        <div class="table-responsive">
-                            <table class="table table-striped table-md">
-                                <tr>
-                                    <th>No</th>
-                                    <th>Name</th>
-                                    <th>Created At</th>
-                                    <th>Status</th>
-                                    <th>Action</th>
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Irwansyah Saputra</td>
-                                    <td>2017-01-09</td>
-                                    <td><div class="badge badge-success">Active</div></td>
-                                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Hasan Basri</td>
-                                    <td>2017-01-09</td>
-                                    <td><div class="badge badge-success">Active</div></td>
-                                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Kusnadi</td>
-                                    <td>2017-01-11</td>
-                                    <td><div class="badge badge-danger">Not Active</div></td>
-                                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Rizal Fakhri</td>
-                                    <td>2017-01-11</td>
-                                    <td><div class="badge badge-success">Active</div></td>
-                                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                </tr>
-                                <tr>
-                                    <td>5</td>
-                                    <td>Isnap Kiswandi</td>
-                                    <td>2017-01-17</td>
-                                    <td><div class="badge badge-success">Active</div></td>
-                                    <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="card-footer text-right">
-                        <nav class="d-inline-block">
-                            <ul class="pagination mb-0">
-                                <li class="page-item disabled">
-                                    <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                                </li>
-                                <li class="page-item active">
-                                    <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">2</a>
-                                </li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                                </li>
-                            </ul>
-                        </nav>
                     </div>
                 </div>
             </div>

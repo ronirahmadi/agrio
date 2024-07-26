@@ -113,6 +113,15 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::patch('/superadmin/pupuk/edit/upload-foto/{kodeunik_pupuk}', [PupukController::class, 'upfotopupuk'])->name('superadmin.pupuk.edit.upload-foto');
     //proses menghapus pupuk
     Route::delete('/superadmin/pupuk/{kodeunik_pupuk}', [PupukController::class, 'delete'])->name('superadmin.pupuk.delete');
+
+    //LAHAN
+    Route::get('/superadmin/lahan', [LahanController::class, 'main'])->name('superadmin.lahan');
+    //create lahan
+    Route::get('/superadmin/lahan/create', [LahanController::class, 'create'])->name('superadmin.lahan.create');
+    Route::get('/superadmin/lahan/create/getkota/{id}',[LahanController::class, 'getKota']);
+    Route::get('/superadmin/lahan/create/getkec/{id}',[LahanController::class, 'getKec']);
+    Route::get('/superadmin/lahan/create/getdes/{id}',[LahanController::class, 'getDes']);    
+    Route::post('/superadmin/lahan/store', [LahanController::class, 'store'])->name('superadmin.lahan.store');
     
 });
 

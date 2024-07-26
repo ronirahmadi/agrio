@@ -40,6 +40,6 @@ class Hama extends Model
      */
     public function ladang()
     {
-        return $this->hasMany(Ladang::class, 'kode_hama');
+        return $this->hasMany(Lahan::class, 'kode_hama');
     }
 }

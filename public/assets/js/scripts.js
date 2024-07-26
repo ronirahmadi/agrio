@@ -614,3 +614,90 @@ $(function() {
     });
   }
 });
+
+//DATA INDONESIA
+//kota atau kabupaten
+jQuery(document).ready(function ()
+{
+        jQuery('select[name="provinsi"]').on('change',function(){
+        var provinsiID = jQuery(this).val();
+        if(provinsiID)
+        {
+          jQuery.ajax({
+              url : '/superadmin/lahan/create/getkota/' +provinsiID,
+              type : "GET",
+              dataType : "json",
+              success:function(data)
+              {
+                    console.log(data);
+                    jQuery('select[name="kota"]').empty();
+                    $('select[name="kota"]').append('<option selected="true" disabled="disabled">--Pilih Kota/Kabupaten--</option>');
+                    jQuery.each(data, function(key,value){
+                    $('select[name="kota"]').append('<option value="'+ key +'">'+ value +'</option>');
+                    });
+              }
+          });
+        }
+        else
+        {
+          $('select[name="kota"]').empty();
+        }
+        });
+});
+//kecamatan
+jQuery(document).ready(function ()
+{
+         jQuery('select[name="kota"]').on('change',function(){
+         var kotaID = jQuery(this).val();
+         if(kotaID)
+         {
+            jQuery.ajax({
+               url : '/superadmin/lahan/create/getkec/' +kotaID,
+               type : "GET",
+               dataType : "json",
+               success:function(data)
+               {
+                     console.log(data);
+                     jQuery('select[name="kecamatan"]').empty();
+                     $('select[name="kecamatan"]').append('<option selected="true" disabled="disabled">--Pilih Kecamatan--</option>');
+                     jQuery.each(data, function(key,value){
+                     $('select[name="kecamatan"]').append('<option value="'+ key +'">'+ value +'</option>');
+                     });
+               }
+            });
+         }
+         else
+         {
+            $('select[name="kecamatan"]').empty();
+         }
+         });
+});
+
+//Desa
+jQuery(document).ready(function ()
+{
+         jQuery('select[name="kecamatan"]').on('change',function(){
+         var kecamatanID = jQuery(this).val();
+         if(kecamatanID)
+         {
+            jQuery.ajax({
+               url : '/superadmin/lahan/create/getdes/' +kecamatanID,
+               type : "GET",
+               dataType : "json",
+               success:function(data)
+               {
+                     console.log(data);
+                     jQuery('select[name="desa"]').empty();
+                     $('select[name="desa"]').append('<option selected="true" disabled="disabled">--Pilih Desa--</option>');
+                     jQuery.each(data, function(key,value){
+                     $('select[name="desa"]').append('<option value="'+ key +'">'+ value +'</option>');
+                     });
+               }
+            });
+         }
+         else
+         {
+            $('select[name="desa"]').empty();
+         }
+         });
+});

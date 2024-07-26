@@ -342,6 +342,16 @@
               "autoWidth": false,
           });
 
+          var table = $('#table-lahan').DataTable({
+              "order": [], // Default sorting
+              "paging": true,
+              "lengthChange": false,
+              "searching": true,
+              "ordering": true,
+              "info": true,
+              "autoWidth": false,
+          });
+
           // Adding auto-numbering to the first column
           table.on('order.dt search.dt', function() {
               let i = 1;

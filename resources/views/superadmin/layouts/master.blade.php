@@ -222,15 +222,6 @@
             </ul>
         </li>
         
-        <li class="menu-header">Lokasi</li>
-        <li class="nav-item dropdown">
-            <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i> <span>Data Lokasi</span></a>
-            <ul class="dropdown-menu">
-                <li><a class="nav-link" href="{{ route('superadmin.lokasi') }}">Daftar Lokasi</a></li>
-                <li><a class="nav-link" href="{{ route('superadmin.lokasi.create') }}">Tambah Lokasi</a></li>
-            </ul>
-        </li>
-        
         <li class="menu-header">Hama</li>
         <li class="nav-item dropdown">
             <a href="#" class="nav-link has-dropdown"><i class="fas fa-bug"></i> <span>Data Hama</span></a>
@@ -248,6 +239,16 @@
                 <li><a class="nav-link" href="{{ route('superadmin.pupuk.create') }}">Tambah Pupuk</a></li>
             </ul>
         </li>
+
+        <li class="menu-header">Lahan</li>
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i> <span>Data Lahan</span></a>
+            <ul class="dropdown-menu">
+                <li><a class="nav-link" href="{{ route('superadmin.lahan') }}">Daftar Lahan</a></li>
+                <li><a class="nav-link" href="{{ route('superadmin.lahan.create') }}">Tambah Lahan</a></li>
+            </ul>
+        </li>
+        
     </ul>
 
         </aside>

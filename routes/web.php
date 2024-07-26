@@ -14,6 +14,10 @@ use App\Http\Controllers\SubMenu\JenisPupukController;
 use App\Http\Controllers\SubMenu\JenisLahanController;
 use App\Http\Controllers\SubMenu\JenisTanamanController;
 use App\Http\Controllers\SubMenu\ContactController;
+use App\Http\Controllers\Admin\DashboardAdminController;
+use App\Http\Controllers\Admin\LaporanController;
+use App\Http\Controllers\Admin\ListLahanController;
+
 
 
 
@@ -111,6 +115,19 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::delete('/superadmin/pupuk/{kodeunik_pupuk}', [PupukController::class, 'delete'])->name('superadmin.pupuk.delete');
     
 });
+
+
+
+// ADMIN
+Route::get('/admin/main', [DashboardAdminController::class, 'main'])->name('admin.main');
+
+// LAPORAN
+Route::get('/admin/laporan', [LaporanController::class, 'laporan'])->name('admin.laporan');
+
+// LIST LAHAN
+Route::get('/admin/listLahan', [ListLahanController::class, 'listLahan'])->name('admin.list-lahan');
+
+
 
 // TANAMAN
 Route::get('/superadmin/tanaman', [TanamanController::class, 'main'])->name('superadmin.tanaman');

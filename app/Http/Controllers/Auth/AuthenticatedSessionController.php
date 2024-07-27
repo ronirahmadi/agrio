@@ -26,15 +26,16 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request){
         $request->authenticate();
         $request->session()->regenerate();
-        if(Auth::user() && Auth::user()->role = 'superadmin'){
+        if(Auth::user() && Auth::user()->role == 'superadmin'){
             return redirect()->route('superadmin.main');
-        } elseif (Auth::user() && Auth::user()->role = 'admin') {
+        } elseif (Auth::user() && Auth::user()->role == 'admin') {
             return redirect()->route('admin.main');
         } else { 
             Auth::guard('web')->logout();
             return redirect()->route('login')->with('status', 'You are not authorized to access this page.');
         }
     }
+    
 
     /**
      * Destroy an authenticated session.

@@ -122,20 +122,20 @@ Route::group(['middleware'=>'role:superadmin'],function () {
     Route::get('/superadmin/lahan/create/getkec/{id}',[LahanController::class, 'getKec']);
     Route::get('/superadmin/lahan/create/getdes/{id}',[LahanController::class, 'getDes']);    
     Route::post('/superadmin/lahan/store', [LahanController::class, 'store'])->name('superadmin.lahan.store');
-    
 });
 
 
 
-// ADMIN
-Route::get('/admin/main', [DashboardAdminController::class, 'main'])->name('admin.main');
+Route::group(['middleware'=>'role:admin'],function () {
+    // ADMIN
+    Route::get('/admin/main', [DashboardAdminController::class, 'main'])->name('admin.main');
 
-// LAPORAN
-Route::get('/admin/laporan', [LaporanController::class, 'laporan'])->name('admin.laporan');
+    // LAPORAN
+    Route::get('/admin/laporan', [LaporanController::class, 'laporan'])->name('admin.laporan');
 
-// LIST LAHAN
-Route::get('/admin/listLahan', [ListLahanController::class, 'listLahan'])->name('admin.list-lahan');
-
+    // LIST LAHAN
+    Route::get('/admin/listLahan', [ListLahanController::class, 'listLahan'])->name('admin.list-lahan');
+});
 
 
 // TANAMAN
